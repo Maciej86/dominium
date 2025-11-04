@@ -35,8 +35,13 @@ W przypadku braku edycji treści, zostanie wyświetlony tekst domyślny. Jeżeli
     
 Sekcja wyświetlająca treść w trzech boksach. W przypadku braku edycji treści, zostanie wyświetlony tekst domyślny. W przypadku pozostawienia pustych pól, na stronie zostanie wyświetlony boks bez zawartości.
  
-### Sekcja Kroki
-Sekcja wyświetlająca cztery boksy z odliczaniem. Każda z wartości jest odliczana od zero do wartości wskazanej 
+### Sekcja Odliczanie
+       Miejsce konfiguracji
+        Wygląd => Dostosuj => Ustawienia motywu strony głównej => Sekcja - Odliczanie
+        
+Sekcja wyświetlająca cztery boksy z odliczaniem. Każda z wartości jest odliczana od zero do wartości wskazanej w ustawieniach motywu. Jeżeli ustawienia nie zostaną zmienione, wówczas zostaną wyświetlone wartości domyślne. 
+
+Jeżeli chcemy uzyskać symbol metrów kwadratowych wówczas trzeba liczbę 2 otoczyć znacznikami `<sup>2</sup>`. Na stronie zostanie wyświetlone m<sup>2</sup>.
 
 ## Konfiguracja kategorii
 
