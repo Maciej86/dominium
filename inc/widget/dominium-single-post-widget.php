@@ -3,7 +3,7 @@ class Dominium_Single_Post_Widget extends WP_Widget {
 
   public function __construct() {
       parent::__construct(
-          'maciej_single_post_widget',
+          'dominium_single_post_widget',
           __('Wpis: pojedynczy post', 'dominium'),
           ['description' => __('Wyświetla tytuł, datę, zajawkę i miniaturkę wybranego wpisu lub strony', 'dominium')]
       );

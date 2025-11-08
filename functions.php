@@ -37,14 +37,13 @@ if (is_customize_preview() || is_admin()) {
 /**
  * Load widgets only in the admin area.
  */
-// if ( is_admin() ) {
-    require get_template_directory() . '/inc/widget/dominium-single-post-widget.php';
-    require get_template_directory() . '/inc/widget/dominium-related-category-posts-widget.php';
-// }
+require get_template_directory() . '/inc/widget/dominium-single-post-widget.php';
+require get_template_directory() . '/inc/widget/dominium-simple-category-posts-widget.php';
+add_action('widgets_init', function() {
+    register_widget('Dominium_Single_Post_Widget');
+    register_widget('Dominium_Simple_Category_Posts_Widget');
+});
 
-if ( defined( 'WP_DEBUG' ) && WP_DEBUG ) {
-    require get_template_directory() . '/inc/debug/enqueue-debug.php';
-}
 
 // ========== OPTIONAL: FRONT-END CONDITIONAL INCLUDES ==========
 /**
@@ -60,3 +59,8 @@ add_action( 'wp', function() {
     //     require get_template_directory() . '/inc/category-functions.php';
     // }
 });
+
+// ========== DEVELOPER DEBUG ==========
+if ( defined( 'WP_DEBUG' ) && WP_DEBUG ) {
+    require get_template_directory() . '/inc/debug/enqueue-debug.php';
+}
