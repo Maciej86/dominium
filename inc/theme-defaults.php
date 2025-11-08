@@ -1,6 +1,7 @@
 <?php
 return [
 	'up_menu' => [
+		'visible' => true,
 		'phone' => "+48 123 456 789",
 		'email' => "kontakt@mojastrona.pl",
 		'facebook' => 'https://www.facebook.pl',

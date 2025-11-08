@@ -10,6 +10,20 @@ function dominium_custom_up_menu_support( $wp_customize ) {
     "priority"    => 50,
   ));
 
+  // Visibility checkbox
+  $wp_customize->add_setting( "up_menu_visible", array(
+    "default"           => $defaults['up_menu']['visible'],
+    "sanitize_callback" => "wp_validate_boolean", 
+  ));
+
+  $wp_customize->add_control( "up_menu_visible_control", array(
+    "label"    => __( "Pokaż sekcję nad menu", "dominium" ),
+    "section"  => "up_menu_section",
+    "settings" => "up_menu_visible",
+    "type"     => "checkbox",
+    "description" => __( "Zaznacz, aby sekcja nad menu była widoczna. Odznacz, aby ją ukryć.", "dominium" ),
+  ));
+
   // Phone number
   $wp_customize->add_setting( "up_menu_phone", array(
     "default"           =>   $defaults['up_menu']['phone'],

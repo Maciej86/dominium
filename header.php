@@ -2,6 +2,7 @@
   $defaults = require get_template_directory() . "/inc/theme-defaults.php";
   $favicon = get_theme_mod("favicon", $defaults["header"]["favicon"]);
   $logo_text = get_theme_mod("header_logo_text", $defaults["header"]["logo"]);
+  $up_menu_visible = get_theme_mod("up_menu_visible", $defaults["up_menu"]["visible"]);
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -33,7 +34,11 @@
   <body class="archivo-200">
     <div class="container_nav">
 
-      <?php get_template_part('template_parts/header','contact'); ?>
+      <?php 
+        if($up_menu_visible) {
+          get_template_part('template_parts/header','contact'); 
+        }
+      ?>
 
       <nav class="nav">
         <div class="container">
