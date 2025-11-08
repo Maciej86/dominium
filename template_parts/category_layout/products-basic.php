@@ -1,7 +1,11 @@
 <?php
+$defaults = require get_template_directory() . '/inc/theme-defaults.php';
+
 $query = get_query_var('query');
 $cat_id = get_query_var('category_id');
 $products_date_display = get_theme_mod('dominium_category_' . $cat_id . '_date_display', 'created');
+$products_red_more = get_theme_mod('dominium_category_' . $cat_id . '_readmore_text', $defaults['category_texts']['read_more']);
+$products_see_all = get_theme_mod('dominium_category_' . $cat_id . '_seeall_text', $defaults['category_texts']['see_all']);
 
 if (empty($query)) {
   global $wp_query;
@@ -55,7 +59,7 @@ if ($query->have_posts()) :
 
   ?>
     <?php if ( is_front_page() ) : ?>
-      <a href="<?php echo esc_url(get_category_link($cat_id)); ?>" class="button_link">zobacz wszystkie</a>
+      <a href="<?php echo esc_url(get_category_link($cat_id)); ?>" class="button_link"><?php echo esc_html( $products_see_all ); ?></a>
     <?php endif; ?>
   <?php
 else:

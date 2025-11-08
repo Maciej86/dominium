@@ -85,6 +85,10 @@ return [
 		'products-basic' => 'Produkty - podstawowy',
 		'blog-basic' => 'Blog - podstawowy',
 	],
+	'category_texts' => [
+        'read_more' => 'Czytaj więcej',
+        'see_all'   => 'Zobacz wszystkie',
+    ],
 	'sections_front_page' => [
 		0 => ['section' => 'steps', 'name' => 'Kroki', 'visible' => true],
 		1 => ['section' => 'counts', 'name' => 'Odliczanie', 'visible' => true],

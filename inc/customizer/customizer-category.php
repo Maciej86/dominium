@@ -56,6 +56,30 @@ function dominium_custom_category( $wp_customize ) {
         'type'     => 'select',
         'choices'  => $defaults['category_layouts'],
     ));
+
+    /* Read more */
+    $readmore_setting_id = 'dominium_category_' . $cat_id . '_readmore_text';
+    $wp_customize->add_setting( $readmore_setting_id, array(
+        'default'           => $defaults['category_texts']['read_more'],
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+    $wp_customize->add_control( $readmore_setting_id, array(
+        'label'    => __( 'Tekst przy skrócie wpisu (np. "Czytaj więcej")', 'dominium' ),
+        'section'  => $section_id,
+        'type'     => 'text',
+    ));
+
+    /* See all */
+    $seeall_setting_id = 'dominium_category_' . $cat_id . '_seeall_text';
+    $wp_customize->add_setting( $seeall_setting_id, array(
+        'default'           => $defaults['category_texts']['see_all'],
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+    $wp_customize->add_control( $seeall_setting_id, array(
+        'label'    => __( 'Tekst linku do wszystkich wpisów (np. "Zobacz wszystkie")', 'dominium' ),
+        'section'  => $section_id,
+        'type'     => 'text',
+    ));
   }
 }
 add_action( 'customize_register', 'dominium_custom_category' );

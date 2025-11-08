@@ -1,7 +1,11 @@
 <?php
+$defaults = require get_template_directory() . '/inc/theme-defaults.php';
+
 $query = get_query_var('query');
 $cat_id = get_query_var('category_id');
 $blog_date_display = get_theme_mod('dominium_category_' . $cat_id . '_date_display', 'created');
+$blog_red_more = get_theme_mod('dominium_category_' . $cat_id . '_readmore_text', $defaults['category_texts']['read_more']);
+$blog_see_all = get_theme_mod('dominium_category_' . $cat_id . '_seeall_text', $defaults['category_texts']['see_all']);
 
 if (empty($query)) {
   global $wp_query;
@@ -50,9 +54,7 @@ if ($query->have_posts()) :
               }
             ?>
             <p>
-              <a href="<?php the_permalink(); ?>" class="blog_container__box__footer__red_more">
-                Czytaj więcej
-              </a>
+              <a href="<?php the_permalink(); ?>" class="blog_container__box__footer__red_more"><?php echo esc_html( $blog_red_more ); ?></a>
             </p>
           </div>
 
@@ -66,7 +68,7 @@ if ($query->have_posts()) :
   ?>
     </div>
     <?php if ( is_front_page() ) : ?>
-      <a href="<?php echo esc_url(get_category_link($cat_id)); ?>" class="button_link">zobacz wszystkie</a>
+      <a href="<?php echo esc_url(get_category_link($cat_id)); ?>" class="button_link"><?php echo esc_html( $blog_see_all ); ?></a>
     <?php endif; ?>
   <?php
 else:
