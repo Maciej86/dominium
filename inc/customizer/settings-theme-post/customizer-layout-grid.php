@@ -93,7 +93,7 @@ function dominium_sanitize_layout_grid_title( $value ) {
 function dominium_sanitize_layout_grid_date( $value ) {
   $defaults = require get_template_directory() . '/inc/theme-defaults.php';
   $allowed = array( 'up-title', 'down-title', 'down-article' );
-  return in_array( $value, $allowed, true ) ? $value : $defaults['settings_layout_grid']['dete'];
+  return in_array( $value, $allowed, true ) ? $value : $defaults['settings_layout_grid']['date'];
 }
 
 function dominium_sanitize_layout_grid_read_more( $value ) {
