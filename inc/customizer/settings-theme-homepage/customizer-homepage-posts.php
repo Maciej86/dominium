@@ -46,6 +46,7 @@ function dominium_custom_homepage_posts_support( $wp_customize ) {
       'settings' => 'products_post_category',
       'type'     => 'select',
       'choices'  => $cat_choices,
+      'description' => __('Wybierz kategorie, której wpisy będą pojawiać się w miejsce "Produktów"', 'dominium' )
   ));
 
   // Number of entries to display on the home page
@@ -95,6 +96,7 @@ function dominium_custom_homepage_posts_support( $wp_customize ) {
     'settings' => 'blog_post_category',
     'type'     => 'select',
     'choices'  => $cat_choices,
+    'description' => __('Wybierz kategorie, której wpisy będą pojawiać się w miejsce "Blog"', 'dominium' )
   ));
   
   // Title blog homepage 

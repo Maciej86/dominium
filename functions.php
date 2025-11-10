@@ -19,10 +19,14 @@ if (is_customize_preview() || is_admin()) {
     // Main Customizer sections
     require get_template_directory() . '/inc/customizer/customizer-homepage.php';
     require get_template_directory() . '/inc/customizer/customizer-category.php';
+    require get_template_directory() . '/inc/customizer/customizer-style-post.php';
     require get_template_directory() . '/inc/customizer/customizer-footer.php';
     require get_template_directory() . '/inc/customizer/customizer-up-menu.php';
     require get_template_directory() . '/inc/customizer/customizer-cookie.php';
     require get_template_directory() . '/inc/customizer/customizer-contact-page.php';
+
+    // Style layout Customizer settings
+    require get_template_directory() . '/inc/customizer/settings-theme-post/customizer-layout-grid.php';
 
     // Homepage-specific Customizer settings
     require get_template_directory() . '/inc/customizer/settings-theme-homepage/customizer-sortable-sections.php';
@@ -33,7 +37,7 @@ if (is_customize_preview() || is_admin()) {
     require get_template_directory() . '/inc/customizer/settings-theme-homepage/customizer-homepage-posts.php';
 };
 
-// ==========  ==========
+// ========== WIDGET ==========
 /**
  * Load widgets.
  */

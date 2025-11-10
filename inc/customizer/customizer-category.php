@@ -36,7 +36,7 @@ function dominium_custom_category( $wp_customize ) {
 			'section'  => $section_id,
 			'type'     => 'select',
 			'choices'  => $defaults['category_layouts'],
-			'description' => 'Wybierz styl w jakim będą wyświetlane wpisy w kategorii.'
+			'description' => __('Wybierz styl w jakim będą wyświetlane wpisy w kategorii. Dodatkowo styl ten możesz edytować w "Ustawienia styli wpisów"', 'dominium' )
     ));
 
     // Date post

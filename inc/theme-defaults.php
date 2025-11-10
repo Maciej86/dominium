@@ -88,6 +88,12 @@ return [
 		'layout-card' => 'Karty pełne',
 		'layout-grid' => 'Siatka',
 	],
+	'settings_layout_grid' => [
+		'title' => 'down-title',
+		'date' => 'down-article',
+		'read_more' => 'between',
+		'background' => false,
+	],
 	'category_texts' => [
 		'read_more' => 'Czytaj więcej',
 		'see_all'   => 'Zobacz wszystkie',
