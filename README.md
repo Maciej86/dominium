@@ -1,9 +1,12 @@
 # Dominium
 
 Dominium to motyw strony dla systemu WordPress. Poniższa dokumentacja jest dokumentacją użytkownika motywu. Konfiguracja motywu odbywa się po przez `Wygląd => Dostosuj`.
+Motyw został zaprojektowany tak, abyś mógł szybko stworzyć nowoczesną stronę firmową bez znajomości kodu.
 
 ## Nawigacja
 
+- [Najwżniejsze funkcje](#️najważniejsze-funkcje)
+- [Instalacja](#instalacja)
 - [Konfiguracja nawigacji](#konfiguracja-nawigacji)
 - [Ustawienia motywu strony głównej](#ustawienia-motywu-strony-głównej)
   - [Ustawienia sekcji](#ustawienia-sekcji)
@@ -19,6 +22,25 @@ Dominium to motyw strony dla systemu WordPress. Poniższa dokumentacja jest doku
 - [Ustawienia ciasteczek (cookie)](#ustawienia-ciasteczek-cookie)
 - [Ustawienia strony kontaktowej](#ustawienia-strony-kontaktowej)
 - [Widget motywu](#widget-motywu)
+- [Licencja](#licencja)
+- [Autor](#autor)
+
+## Najważniejsze funkcje
+
+- ✅ Ustawienia motywu dostępne w **Customizerze**
+- ✅ Możliwość **włączania, wyłączania i sortowania sekcji** strony głównej
+- ✅ Sekcje: **Nagłówek, Kroki, Odliczanie, Kontakt, Blog, Produkty**
+- ✅ Automatyczne wartości domyślne, jeśli użytkownik nie wprowadzi własnych treści
+- ✅ Responsywny układ – działa na desktopie, tablecie i telefonie
+- ✅ Prosty, lekki kod, gotowy do dalszej rozbudowy
+
+## Instalacja
+
+1. Pobierz motyw z [GitHub](https://github.com/Maciej86/dominium-theme-wordpress)
+2. Skopiuj folder `dominium` do katalogu:
+3. W panelu WordPress przejdź do:  
+   `Wygląd → Motywy` i aktywuj **Dominium**
+4. Skonfiguruj motyw:
 
 ## Konfiguracja nawigacji
 
@@ -31,19 +53,21 @@ Motyw oferuje dwie nawigacje:
 
 W obu przypadkach nawigacja jest jedno poziomowa.
 
-**_Dopóki nawigacja nie zostanie skonfigurowana w panelu administracyjnym WordPress, nie będzie się wyświetlać prawidłowo. Wynika to z budowy nawigacji._**
+> **_💡 Dopóki nawigacja nie zostanie skonfigurowana w panelu administracyjnym WordPress, nie będzie się wyświetlać prawidłowo. Wynika to z budowy nawigacji._**
 
 ## Ustawienia motywu strony głównej
 
     Wygląd => Dostosuj => Ustawienia motywu strony głównej
 
-Stronę główną dzielimy na kilka sekcji, którą każdą z nich możemy podzielić na kilka sekcji.
+Strona główna składa się z kilku sekcji, które możesz **włączać, wyłączać** i **zmieniać kolejność**.
 
 ### Ustawienia sekcji
 
     Wygląd => Dostosuj => Ustawienia motywu strony głównej => Ustawienia sekcji
 
 W tym miejscu można wyłączyć lub włączyć poszczególne sekcje strony głównej, jak równieżzmienić ich kolejność na stronie.
+
+---
 
 ### Sekcja Nagłówek
 
@@ -59,6 +83,8 @@ W sekcji znajdują się dwa przyciski. Jeżeli nie podamy linka prowadzącego do
 - treść przycisków jest zawsze wyświetlana wielkimi literami, niezależnie od wprowadzonego tekstu w konfiguratorze
 - przyciemnienie na zdjęciu jest dodawane automatycznie przez motyw.
 
+---
+
 ### Sekcja Kroki
 
      Wygląd => Dostosuj => Ustawienia motywu strony głównej => Sekcja - Kroki
@@ -69,6 +95,8 @@ Sekcja wyświetlająca treść w trzech boksach.
 
 - w przypadku braku edycji treści, zostanie wyświetlony tekst domyślny
 - w przypadku pozostawienia pustych pól, na stronie zostanie wyświetlony boks bez zawartości
+
+---
 
 ### Sekcja Odliczanie
 
@@ -82,6 +110,8 @@ Sekcja wyświetlająca cztery boksy z odliczaniem. Każda z wartości jest odlic
 - jeżeli chcemy uzyskać symbol metrów kwadratowych wówczas trzeba liczbę 2 otoczyć znacznikami `<sup>2</sup>`. Na stronie zostanie wyświetlone m<sup>2</sup>
 - tytuł odliczania, jest zawsze wyświetlany wielkimi literami, niezależnie od wprowadzonego tekstu w konfiguratorze
 
+---
+
 ### Sekcja Napisz do nas
 
     Wygląd => Dostosuj => Ustawienia motywu strony głównej => Sekcja - Naszpi do nas
@@ -92,6 +122,8 @@ Sekcja wyświetlająca nagłówek tekst oraz przycisk, prowadzący do dowolnej s
 
 - w przypadku braku edycji treści, zostanie wyświetlony tekst domyślny
 - przyciemnienie na zdjęciu jest dodawane automatycznie przez motyw
+
+---
 
 ### Sekcja Produkty, Blok
 
@@ -110,3 +142,15 @@ Obie sekcje na stronie głównej wyświetlają wpisy z wybranych kategorii. W pr
 ## Ustawienia strony kontaktowej
 
 ## Widget motywu
+
+## Licencja
+
+Dominium jest udostępniany na licencji **GNU General Public License v2 lub nowszej (GPL)**.  
+Możesz go dowolnie używać, modyfikować i rozpowszechniać.
+
+## Autor
+
+**Autor:** [Maciej](https://github.com/Maciej86)  
+**Repozytorium:** [https://github.com/maciej/dominium](https://github.com/Maciej86/dominium-theme-wordpress)
+
+> Jeśli chcesz zgłosić błąd lub propozycję nowej funkcji, użyj zakładki **Issues** na GitHubie.
