@@ -38,9 +38,8 @@ Motyw został zaprojektowany tak, abyś mógł szybko stworzyć nowoczesną stro
 
 1. Pobierz motyw z [GitHub](https://github.com/Maciej86/dominium-theme-wordpress)
 2. Skopiuj folder `dominium` do katalogu:
-3. W panelu WordPress przejdź do:  
-   `Wygląd → Motywy` i aktywuj **Dominium**
-4. Skonfiguruj motyw:
+3. W panelu WordPress przejdź do: `Wygląd → Motywy` i aktywuj **Dominium**
+4. Skonfiguruj motyw: `Wygląd → Dostosuj`
 
 ## Konfiguracja nawigacji
 
@@ -49,7 +48,7 @@ Motyw został zaprojektowany tak, abyś mógł szybko stworzyć nowoczesną stro
 Motyw oferuje dwie nawigacje:
 
 - Menu główne - wyświetlane jest w górnej części strony
-- Menu w stopce - wyświetlane jest w sopce strony
+- Menu w stopce - wyświetlane jest w stopce strony
 
 W obu przypadkach nawigacja jest jedno poziomowa.
 
@@ -114,7 +113,7 @@ Sekcja wyświetlająca cztery boksy z odliczaniem. Każda z wartości jest odlic
 
 ### Sekcja Napisz do nas
 
-    Wygląd => Dostosuj => Ustawienia motywu strony głównej => Sekcja - Naszpi do nas
+    Wygląd => Dostosuj => Ustawienia motywu strony głównej => Sekcja - Napisz do nas
 
 Sekcja wyświetlająca nagłówek tekst oraz przycisk, prowadzący do dowolnej strony, na przykład strony kontaktowej. Dzięki konfiguracji sekcja ta może zostać wykorzystana również do promocji wydarzenia.
 
