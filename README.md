@@ -58,7 +58,20 @@ W obu przypadkach nawigacja jest jedno poziomowa.
 
     Wygląd => Dostosuj => Ustawienia motywu strony głównej
 
-Strona główna składa się z kilku sekcji, które możesz **włączać, wyłączać** i **zmieniać kolejność**.
+> 💡 Strona główna składa się z kilku sekcji, które możesz **włączać, wyłączać** i **zmieniać kolejność**.
+
+Obecnie strona główna skłąda się z następujących sekcji:
+
+- Nagłówek - jest to część ze zdjęciem w tle
+- Kroki - jest to sekcja z trzema boksami, która każa zwiera tyuł oraz treść
+- Odliczanie - jest to sekcja, gdzie jest animacja odliczania zdeklarowanych wartości wraz z podpisem
+- Wpisy z kategorii - jest to pierwsza tego typu sekcja, w której można wyświetlić wpisy z wybranej kategorii
+- Napisz do nas - jest to wąska sekcja ze zdjęciem oraz przyciskiem kierującym do dowolnej podstrony
+- Wpisy z kategorii - jest to druga sekcja tego typu, gdzie można wyświetlić wpisy z wybranej kategorii
+
+Nawigacja czy stopka nie podlegają opcji wyłączenia czy zminy kolejności.
+
+---
 
 ### Ustawienia sekcji
 
@@ -141,6 +154,12 @@ Obie sekcje na stronie głównej wyświetlają wpisy z wybranych kategorii. W pr
 ## Ustawienia strony kontaktowej
 
 ## Widget motywu
+
+## W przygotowaniu
+
+- [ ] Włączanie oraz wyłącznie opisu dla kategorii na stronie głównej oraz stronie kategorii
+- [ ] Włączenie oraz włączenie belki nad nawigacją
+- [ ] Zmiana ilości boksów na stronie głównej w sekcji "Odliczanie"
 
 ## Licencja
 
