@@ -15,7 +15,7 @@ function dominium_enqueue_cookie() {
     $iframe_button = get_theme_mod('cookie_iframe_button', 'Set cookies');
 
     ob_start();
-    include get_template_directory() . '/template_parts/cookie/iframe-placeholder.php';
+    include get_template_directory() . '/template-parts/cookie/iframe-placeholder.php';
     $iframe_placeholder_html = ob_get_clean();
 
     // Pass data to JS

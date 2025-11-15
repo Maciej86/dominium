@@ -9,7 +9,7 @@
             <?php
               if (have_posts()) :
                 while (have_posts()) : the_post();
-                  get_template_part('template_parts/content-post','main');
+                  get_template_part('template-parts/content-post','main');
                 endwhile;
               endif;
             ?>
@@ -18,7 +18,7 @@
         </div>
         <aside class="aside">
           <?php
-            get_template_part('template_parts/sidebar');
+            get_template_part('template-parts/sidebar');
           ?>
         </aside>
       </div>

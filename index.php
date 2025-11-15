@@ -11,7 +11,7 @@
         <?php
           if (have_posts()) :
             while (have_posts()) : the_post();
-              get_template_part('template_parts/content-post','main');
+              get_template_part('template-parts/content-post','main');
             endwhile;
           endif;
         ?>

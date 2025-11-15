@@ -41,7 +41,7 @@ if ( $blog_count === 0 ) {
         set_query_var('query', $query);
         set_query_var('category_id', $blog_cat_id);
         
-        get_template_part('template_parts/category_layout/' . $blog_layout);
+        get_template_part('template-parts/category_layout/' . $blog_layout);
 
       } else {
         // not catgory

@@ -51,7 +51,7 @@
           ?>
             <div class="container">
               <?php
-                get_template_part('template_parts/cookie/iframe-placeholder', null, [
+                get_template_part('template-parts/cookie/iframe-placeholder', null, [
                   'domain' => 'maps.google.com',
                   'iframe_src' => $map_src
                 ]);

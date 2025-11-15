@@ -1,6 +1,6 @@
 <?php
   $defaults = require get_template_directory() . '/inc/theme-defaults.php';
-  $logo_svg = require get_template_directory() . '/template_parts/logo-svg.php';
+  $logo_svg = require get_template_directory() . '/template-parts/logo-svg.php';
 
   $up_menu_email = get_theme_mod("up_menu_email", $defaults["up_menu"]["email"]);
   $up_menu_phone = get_theme_mod("up_menu_phone", $defaults["up_menu"]["phone"]);
@@ -113,7 +113,7 @@
     </footer>
     <?php 
       if($cooki_visible) {
-        get_template_part('template_parts/cookie/cookie','content');
+        get_template_part('template-parts/cookie/cookie','content');
       }
       wp_footer();
     ?>

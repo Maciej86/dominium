@@ -36,7 +36,7 @@
 
       <?php 
         if($up_menu_visible) {
-          get_template_part('template_parts/header','contact'); 
+          get_template_part('template-parts/header','contact'); 
         }
       ?>
 

@@ -27,12 +27,12 @@ if (empty($sections)) {
 
 <main>
   <?php 
-  get_template_part('template_parts/front_page/header','main');
+  get_template_part('template-parts/front_page/header','main');
 
   foreach ( $sections as $section_id ) {
     $allowed = array_column($default_sections, 'section');
     if ( in_array($section_id, $allowed, true) ) {
-      get_template_part('template_parts/front_page/' . $section_id, 'main');
+      get_template_part('template-parts/front_page/' . $section_id, 'main');
     }
   }
   ?>

@@ -40,7 +40,7 @@ if ( $products_count === 0 ) {
         $query = new WP_Query($args);
         set_query_var('query', $query);
         set_query_var('category_id', $product_cat_id);
-        get_template_part('template_parts/category_layout/' . $products_layout);
+        get_template_part('template-parts/category_layout/' . $products_layout);
 
       } else {
         // not catgory
