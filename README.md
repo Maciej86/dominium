@@ -36,7 +36,7 @@ Motyw został zaprojektowany tak, abyś mógł szybko stworzyć nowoczesną stro
 
 ## Instalacja
 
-1. Pobierz motyw z [GitHub](https://github.com/Maciej86/dominium-theme-wordpress)
+1. Pobierz motyw z [GitHub](https://github.com/Maciej86/dominium-theme-wordpress) klikając `<> Code` -> `Download ZIP`
 2. Skopiuj folder `dominium` do katalogu:
 3. W panelu WordPress przejdź do: `Wygląd → Motywy` i aktywuj **Dominium**
 4. Skonfiguruj motyw: `Wygląd → Dostosuj`
@@ -139,7 +139,7 @@ Sekcja wyświetlająca nagłówek tekst oraz przycisk, prowadzący do dowolnej s
 
 ### Sekcja Produkty, Blok
 
-Obie sekcje na stronie głównej wyświetlają wpisy z wybranych kategorii. W przypadku skecji Blog, można podać alternatywny nagłówek dla tej sekcji.
+Obie sekcje na stronie głównej wyświetlają wpisy z wybranych kategorii. W przypadku skecji Blog, można podać alternatywny nagłówek dla tej sekcji. Jeżeli przy tworzeniu koategrii został podany opis, zostanie on wyświetlony na stronie głównej.
 
 ## Ustawienia kategorii
 
@@ -160,6 +160,7 @@ Obie sekcje na stronie głównej wyświetlają wpisy z wybranych kategorii. W pr
 - [ ] Włączanie oraz wyłącznie opisu dla kategorii na stronie głównej oraz stronie kategorii
 - [ ] Włączenie oraz włączenie belki nad nawigacją
 - [ ] Zmiana ilości boksów na stronie głównej w sekcji "Odliczanie"
+- [ ] Wyświetlaenie dowolnej strony lub wpisu na stronie głównej
 
 ## Licencja
 
