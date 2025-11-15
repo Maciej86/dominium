@@ -36,7 +36,7 @@ function dominium_custom_footer_support( $wp_customize ) {
   ));
 
   // Address 1
-  $wp_customize->add_setting( "company_addres_1", array(
+  $wp_customize->add_setting( "company_address_1", array(
     "default"           =>   $defaults['footer']['company_address_1'],
     "sanitize_callback" => "sanitize_text_field",
   ));
@@ -44,12 +44,12 @@ function dominium_custom_footer_support( $wp_customize ) {
   $wp_customize->add_control( "company_address_1_control", array(
     "label"    => __( "Adres", "dominium" ),
     "section"  => "footer_section",
-    "settings" => "company_addres_1",
+    "settings" => "company_address_1",
     "type"     => "text",
   ));
 
   // Address 2
-  $wp_customize->add_setting( "company_addres_2", array(
+  $wp_customize->add_setting( "company_address_2", array(
     "default"           =>   $defaults['footer']['company_address_2'],
     "sanitize_callback" => "sanitize_text_field",
   ));
@@ -57,7 +57,7 @@ function dominium_custom_footer_support( $wp_customize ) {
   $wp_customize->add_control( "company_address_2_control", array(
     "label"    => __( "Dalszy ciąg adresu", "dominium" ),
     "section"  => "footer_section",
-    "settings" => "company_addres_2",
+    "settings" => "company_address_2",
     "type"     => "text",
   ));
 
