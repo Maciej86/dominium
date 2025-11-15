@@ -30,7 +30,8 @@ if ($query->have_posts()) :
     }
 
     ?>
-      <div class="products__box products__box--<?php echo $setting_layout_position_image ?>">
+      <div class="products__box products__box--<?php echo $setting_layout_position_image ?>">      
+
         <div
           class="products__box_image products__box_image--<?php echo $setting_layout_position_image ?> js-image-background"
           data-image="<?php the_post_thumbnail_url('medium'); ?>"

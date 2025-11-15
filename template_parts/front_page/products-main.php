@@ -2,7 +2,7 @@
 <?php
 $product_cat_id = get_theme_mod('products_post_category');
 $products_count = get_theme_mod('products_home_posts_count', 3);
-$products_layout = get_theme_mod('dominium_category_' . $product_cat_id . '_layout', 'layout-card');
+$products_layout = get_theme_mod('dominium_category_' . $product_cat_id . '_layout', 'layout-grid');
 
 if (!empty($product_cat_id) && term_exists($product_cat_id, 'category')) {
   $category = get_category($product_cat_id);
@@ -12,7 +12,7 @@ if (!empty($product_cat_id) && term_exists($product_cat_id, 'category')) {
   $section_id = sanitize_title($category_name);
 } else {
   $category_name = __('Konstrukcje', 'dominium');
-  $category_description = __('Wszystkie konstrukcje wykonujemy z certyfikowanej stali...', 'dominium');
+  $category_description = "";
   $section_id = 'konstrukcje';
 }
 
@@ -40,7 +40,7 @@ if ( $products_count === 0 ) {
         $query = new WP_Query($args);
         set_query_var('query', $query);
         set_query_var('category_id', $product_cat_id);
-        get_template_part('template_parts/category_layout/'. $products_layout);
+        get_template_part('template_parts/category_layout/' . $products_layout);
 
       } else {
         // not catgory

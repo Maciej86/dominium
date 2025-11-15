@@ -3,7 +3,6 @@
 $blog_cat_id = get_theme_mod('blog_post_category');
 $blog_title = get_theme_mod('blog_post_title', __('Ostatnie wpisy na blogu', 'dominium'));
 $blog_count = get_theme_mod('blog_home_posts_count', 3);
-
 $blog_layout =  get_theme_mod('dominium_category_' . $blog_cat_id . '_layout', 'layout-grid');
 
 if (!empty($blog_cat_id) && term_exists($blog_cat_id, 'category')) {
