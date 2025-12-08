@@ -22,7 +22,7 @@ Motyw został zaprojektowany tak, abyś mógł szybko stworzyć nowoczesną stro
 - [Ustawienia stopki](#ustawienia-stopki)
 - [Ustawienia ciasteczek (cookie)](#ustawienia-ciasteczek-cookie)
 - [Ustawienia strony kontaktowej](#ustawienia-strony-kontaktowej)
-- [Widget motywu](#widget-motywu)
+- [Widżety motywu](#widżet-motywu)
 - [W przygotowaniu](#w-przygotowaniu)
 - [Licencja](#licencja)
 - [Autor](#autor)
@@ -294,7 +294,7 @@ Motyw domyślnie wspiera formularz kontaktowy tworzony przy pomocy [Contact Form
 2. Utwórz stronę z danymi kontaktowymi w dowolnej formie.
 3. Przejdź do `Wygląd => Dostosuj => Ustawienia strony kontaktowej`. W **Strona z danymi kontaktowymi** wybierz stronę, w której znajdują siędane kontaktowe z punktu 2. W **Shortcode formularza kontaktowego** wpisz shortcode z Contact Form 7 twojego formularza kontaktowego. W **Mapa Google (pełny kod iframe)** podaj pełny kod iframe dla mapy google.
 
-## Widgety motywu
+## Widżety motywu
 
     🛠️ Wygląd => Widżety
 
