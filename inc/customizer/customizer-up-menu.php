@@ -114,14 +114,14 @@ function dominium_custom_up_menu_support( $wp_customize ) {
     "description" => __( "Podaj pełny adres strony wraz z https. Brak adresu spowoduje brak wyświetlenia ikony.", "dominium" ),
   ));
 
-    // Tik-Tok
+    // X
     $wp_customize->add_setting( "up_menu_x", array(
       "default"           =>   $defaults['up_menu']['x'],
       "sanitize_callback" => "sanitize_text_field",
     ));
   
     // Add contrl email customizer
-    $wp_customize->add_control( "up_menu_tiktok_control", array(
+    $wp_customize->add_control( "up_menu_x_control", array(
       "label"    => __( "Profil na X", "dominium" ),
       "section"  => "up_menu_section",
       "settings" => "up_menu_x",
