@@ -16,13 +16,13 @@
       <ul class="header_contact__contact__list">
         <li class="header_contact__contact__list__item">
           <a href="mailto:<?php echo esc_html( $up_menu_email ); ?>">
-            <span class="material-symbols-outlined">alternate_email</span>
+            <span class="icon-alternate_email"></span>
             <?php echo esc_html( $up_menu_email ); ?>
           </a>
         </li>
         <li class="header_contact__contact__list__item">
           <a href="tel:<?php echo esc_attr(preg_replace('/\s+|-/', '', $up_menu_phone)); ?>">
-            <span class="material-symbols-outlined">mobile_2</span>
+            <span class="icon-stay_current_portrait"></span>
             <?php echo esc_html( $up_menu_phone ); ?>
           </a>
         </li>
@@ -31,27 +31,27 @@
 
         <?php if ( !empty( $up_menu_facebook ) ) : ?>
           <a href="<?php echo esc_url( $up_menu_facebook ); ?>">
-            <?php echo $logo_svg['facebook']; ?>
+            <span class="icon-facebook2"></span>
           </a>
         <?php endif; ?>
 
         <?php if ( !empty( $up_menu_instagram ) ) : ?>
           <a href="<?php echo esc_url( $up_menu_instagram ); ?>">
-            <?php echo $logo_svg['instagram']; ?>
+            <span class="icon-instagram"></span>
           </a>
         <?php endif; ?>
 
         <?php if ( !empty( $up_menu_tiktok ) ) : ?>
           <a href="<?php echo esc_url( $up_menu_tiktok ); ?>">
-            <?php echo $logo_svg['tiktok']; ?>
+            <span class="icon-tiktok"></span>
           </a>
         <?php endif; ?>
 
         <?php if ( !empty( $up_menu_x ) ) : ?>
-              <a href="<?php echo esc_url( $up_menu_x ); ?>">
-                <?php echo $logo_svg['x']; ?>
-              </a>
-            <?php endif; ?>
+          <a href="<?php echo esc_url( $up_menu_x ); ?>">
+            <span class="icon-x"></span>
+          </a>
+        <?php endif; ?>
 
       </div>
     </div>

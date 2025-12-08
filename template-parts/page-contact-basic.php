@@ -16,7 +16,10 @@
 ?>
 
   <main class="page_main page_main_contact">
-    <div class="container">
+    <div class="container page_style">
+      <div class="header_article">
+        <h1 class="title_page"><?php the_title(); ?></h1>
+      </div>
       <div class="contanct page_style">
         <div class="contanct__data">
           <?php

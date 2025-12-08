@@ -5,31 +5,34 @@
  */
 
 add_action( 'wp_enqueue_scripts', function() {
-    $defaults = require get_template_directory() . "/inc/theme-defaults.php";
-    $cooki_visible = get_theme_mod("cookie_visible", $defaults["cookie"]["visible"]);
+	$defaults = require get_template_directory() . "/inc/theme-defaults.php";
+	$cooki_visible = get_theme_mod("cookie_visible", $defaults["cookie"]["visible"]);
 
-    // Always loaded styles/scripts
-    require get_template_directory() . '/inc/enqueue/enqueue-global.php';
+	// Always loaded styles/scripts
+	require get_template_directory() . '/inc/enqueue/enqueue-global.php';
 
-    // Homepage only
-    if ( is_front_page() ) {
-        require get_template_directory() . '/inc/enqueue/enqueue-homepage.php';
-    }
+	// Homepage only
+	if ( is_front_page() ) {
+		require get_template_directory() . '/inc/enqueue/enqueue-homepage.php';
+	}
 
-    // Category pages
-    if ( is_category() ) {
-        require get_template_directory() . '/inc/enqueue/enqueue-category.php';
-    }
+	// Category pages
+	if ( is_category() ) {
+		require get_template_directory() . '/inc/enqueue/enqueue-category.php';
+	}
 
-    // Single post or page
-    if ( is_singular() ) {
-        require get_template_directory() . '/inc/enqueue/enqueue-single-page.php';
-    }
+	// Single post or page
+	if ( is_singular() ) {
+		require get_template_directory() . '/inc/enqueue/enqueue-single-page.php';
+	}
 
-    if($cooki_visible) {
-        // Cookie handling (available globally)
-        require get_template_directory() . '/inc/enqueue/enqueue-cookie.php';
-    }
-    
+	if($cooki_visible) {
+		// Cookie handling (available globally)
+		require get_template_directory() . '/inc/enqueue/enqueue-cookie.php';
+	}
+	
+	if (is_customize_preview()) {
+		require get_template_directory() . '/inc/enqueue/enqueue-customizer.php';
+	}
 
 }, 20);

@@ -75,7 +75,6 @@ class Dominium_sortable_sections_homepage extends WP_Customize_Control {
 			<?php endforeach; ?>
 		</ul>
 
-		// Hidden input
 		<input type="hidden" <?php $this->link(); ?> 
 						value="<?php echo esc_attr($saved_value ?: json_encode($items)); ?>">
 		<?php

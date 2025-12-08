@@ -7,7 +7,7 @@ function dominium_custom_up_menu_support( $wp_customize ) {
   $wp_customize->add_section( "up_menu_section", array(
     "title"       => __( "Ustawienia bleki nad menu", "dominium" ),
     "description" => __( "Ustawienia skecji Nad nawigacją", "dominium" ),
-    "priority"    => 60,
+    "priority"    => 70,
   ));
 
   // Visibility checkbox
@@ -114,14 +114,14 @@ function dominium_custom_up_menu_support( $wp_customize ) {
     "description" => __( "Podaj pełny adres strony wraz z https. Brak adresu spowoduje brak wyświetlenia ikony.", "dominium" ),
   ));
 
-    // X
+    // Tik-Tok
     $wp_customize->add_setting( "up_menu_x", array(
       "default"           =>   $defaults['up_menu']['x'],
       "sanitize_callback" => "sanitize_text_field",
     ));
   
     // Add contrl email customizer
-    $wp_customize->add_control( "up_menu_x_control", array(
+    $wp_customize->add_control( "up_menu_tiktok_control", array(
       "label"    => __( "Profil na X", "dominium" ),
       "section"  => "up_menu_section",
       "settings" => "up_menu_x",

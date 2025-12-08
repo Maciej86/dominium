@@ -6,7 +6,7 @@ function dominium_custom_footer_support( $wp_customize ) {
   $wp_customize->add_section( "footer_section", array(
     "title"       => __( "Ustawienia stopki", "dominium" ),
     "description" => __( "Dane kontaktowe (numer telefonu, email) oraz linki do kont społecznościowych ustawiane są w Sekcja nad menu. Natomiast nawigację w stopcę ustawiamy w sekcji Menu.", "dominium" ),
-    "priority"    => 70,
+    "priority"    => 80,
   ));
 
   // Company name

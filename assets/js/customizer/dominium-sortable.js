@@ -78,7 +78,7 @@ const initSortableList = () => {
       li.dataset.visible = visible ? "true" : "false";
       li.classList.toggle("is-hidden", !visible);
 
-      // niewidoczne na dół
+      // hidden down
       if (!visible) list.appendChild(li);
       else {
         const firstHidden = list.querySelector(".is-hidden");

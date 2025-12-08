@@ -31,7 +31,7 @@
 
     <?php wp_head(); ?>
   </head>
-  <body class="archivo-200">
+  <body <?php body_class(); ?>>
     <div class="container_nav">
 
       <?php 
@@ -58,7 +58,7 @@
           <div class="nav__menu js-menu">
             <div class="nav__menu_hiden_mobile">
               <button class="nav__menu_mobile__button js-hidden-menu">
-                <span class="material-symbols-outlined">close</span>
+                <span class="icon-clear"></span>
               </button>
             </div>
 
@@ -72,7 +72,7 @@
           </div>
           <div class="nav__menu_show_mobile">
             <button class="nav__menu_mobile__button js-show-menu">
-              <span class="material-symbols-outlined">menu</span>
+              <span class="icon-menu1"></span>
             </button>
           </div>
         </div>

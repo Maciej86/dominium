@@ -1,5 +1,5 @@
 const dominiumCookie = () => {
-  const cookieModal = document.querySelector(".cookie");
+  const cookieModal = document.querySelector(".js-cookie-dominium");
   if (!cookieModal) return;
 
   const [acceptAllBtn, acceptNecessaryBtn] = cookieModal.querySelectorAll(
@@ -28,7 +28,7 @@ const dominiumCookie = () => {
   acceptAllBtn.addEventListener("click", () => {
     setCookie("cookie_consent", "all", 365);
     cookieModal.style.display = "none";
-    dominiumEnableBlockedIframes(); // ← przywraca wszystkie iframe’y
+    dominiumEnableBlockedIframes();
   });
 
   // Accept only necessary
@@ -52,7 +52,9 @@ const dominiumBlockIframes = () => {
   const placeholderTemplate =
     window.dominiumCookieData?.iframePlaceholder || "";
 
-  if (consentAll || blockedDomains.length === 0) return;
+  if (consentAll || blockedDomains.length === 0) {
+    return;
+  }
 
   const iframes = document.querySelectorAll("iframe");
 
@@ -65,15 +67,12 @@ const dominiumBlockIframes = () => {
       const placeholder = document.createElement("div");
       placeholder.className = "iframe-placeholder";
 
-      // Zapamiętujemy pełny kod iframe (z atrybutami i stylem)
       placeholder.setAttribute("data-iframe-html", iframe.outerHTML);
       placeholder.setAttribute("data-iframe-src", src);
 
-      // Generujemy treść komunikatu o cookies
       const html = placeholderTemplate.replace(/{{DOMAIN}}/g, domainName);
       placeholder.innerHTML = html;
 
-      // Zamieniamy iframe na placeholder
       iframe.parentNode.replaceChild(placeholder, iframe);
     }
   });
@@ -95,40 +94,38 @@ const dominiumEnableBlockedIframes = () => {
 
   placeholders.forEach((ph) => {
     const iframeHtml = ph.getAttribute("data-iframe-html");
-    if (!iframeHtml) return;
-
-    ph.outerHTML = iframeHtml;
+    if (iframeHtml) {
+      ph.outerHTML = iframeHtml;
+    }
   });
 
   // Return google maps
   const mapContainer = document.querySelector(".map.map--empty");
   if (mapContainer) {
     const mapPlaceholder = mapContainer.querySelector(
-      ".cookie_iframe_placeholder"
+      ".js-cookie-placecholder-dominium"
     );
-    const iframeHtml = mapPlaceholder
-      ?.closest(".iframe-placeholder")
-      ?.getAttribute("data-iframe-html");
 
-    if (iframeHtml) {
-      mapContainer.innerHTML = iframeHtml;
-    } else {
-      const storedMap = document.querySelector(
-        "[data-iframe-html*='maps.google']"
-      );
-      if (storedMap) {
-        mapContainer.innerHTML = storedMap.getAttribute("data-iframe-html");
+    let iframeHtml = mapPlaceholder?.getAttribute("data-iframe-html");
+
+    if (!iframeHtml) {
+      const src = mapPlaceholder?.getAttribute("data-iframe-src");
+      if (src) {
+        iframeHtml = `<iframe src="${src}" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
       }
     }
 
-    mapContainer.classList.remove("map--empty");
+    if (iframeHtml) {
+      mapContainer.innerHTML = iframeHtml;
+      mapContainer.classList.remove("map--empty");
+    }
   }
 };
 
 // Init
-const init = () => {
+const initCookieDominium = () => {
   dominiumCookie();
   dominiumBlockIframes();
 };
 
-init();
+initCookieDominium();

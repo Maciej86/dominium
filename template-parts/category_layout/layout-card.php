@@ -17,34 +17,35 @@ if (empty($query)) {
 }
 
 if ($query->have_posts()) :
-
+  $count = 0;
   while ($query->have_posts()) : $query->the_post(); 
-
+   $count++;
+   
     $date_post = '';
     if ($products_date_display !== 'none') {
       $date_value = ($products_date_display === 'created') 
         ? get_the_date('d.m.Y') 
         : get_the_modified_date('d.m.Y');
 
-      $date_post = '<div class="page_date"><span class="material-symbols-outlined">calendar_month</span>'. $date_value . '</div>';
+      $date_post = '<div class="page_date"><span class="icon-calendar"></span>'. $date_value . '</div>';
     }
 
     ?>
-      <div class="products__box products__box--<?php echo $setting_layout_position_image ?>">      
+      <div class="cards__box cards__box--<?php echo $setting_layout_position_image ?>">      
 
         <div
-          class="products__box_image products__box_image--<?php echo $setting_layout_position_image ?> js-image-background"
+          class="cards__box_image cards__box_image--<?php echo $setting_layout_position_image ?> js-image-background"
           data-image="<?php the_post_thumbnail_url('medium'); ?>"
         ></div>
-        <div class="products__box__description products__box__description--<?php echo $setting_layout_position_image ?>">
+        <div class="cards__box__description cards__box__description--<?php echo $setting_layout_position_image ?>">
           <div>
 
             <?php if($setting_layout_date === "up-title") : ?>
               <?php echo $date_post; ?>
             <?php endif; ?>
 
-            <h2 class="products__box__description__title">
-              <a href="<?php the_permalink(); ?>" class="products__box__description__title_link"><?php the_title(); ?></a>
+            <h2 class="cards__box__description__title">
+              <a href="<?php the_permalink(); ?>" class="cards__box__description__title_link"><?php the_title(); ?></a>
             </h2>
 
             <?php if($setting_layout_date === "down-title") : ?>
@@ -58,9 +59,21 @@ if ($query->have_posts()) :
             <?php endif; ?>
           </div>
           
-          <div class="products__box__description__more products__box__description__more--<?php echo $setting_layout_position_image ?>">
+          <div class="cards__box__description__more cards__box__description__more--<?php echo $setting_layout_position_image ?>">
             <a href="<?php the_permalink(); ?>">
-              <span class="material-symbols-outlined">expand_circle_right</span>
+            <?php
+              if ($setting_layout_position_image === 'right') {
+                  echo '<span class="icon-circle-left"></span>';
+              } elseif ($setting_layout_position_image === 'left') {
+                  echo '<span class="icon-circle-right"></span>';
+              } elseif ($setting_layout_position_image === 'left-right') {
+                  if ($count % 2 === 0) {
+                      echo '<span class="icon-circle-left"></span>';
+                  } else {
+                      echo '<span class="icon-circle-right"></span>';
+                  }
+              }
+            ?>
             </a>
           </div>
         </div>

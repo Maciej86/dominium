@@ -1,5 +1,8 @@
 <?php
 return [
+	'main_settings' => [
+		'theme' => 'steel'
+	],
 	'up_menu' => [
 		'visible' => true,
 		'phone' => "+48 123 456 789",
@@ -40,6 +43,9 @@ return [
 	'cookie' => [
 		'visible' => true,
 		'description' => 'Strona wykorzystuje pliki cookie w celu zapewnienia najlepszej jakości usług.',
+		'description_block_iframe' => 'Aby wyświetlić zawartość z <strong>{{DOMAIN}}</strong>, zaakceptuj wszystkie pliki cookie.',
+		'button_description_block_iframe' => 'Ustaw cookies',
+		'block_domains' => 'youtube.com\nvimeo.com\ngoogle.com/maps',
 		'button_all' => 'Akceptuj wszystkie',
 		'button_necessary' => 'Akceptuj niezbędne',
 		'display_type' => 'full',

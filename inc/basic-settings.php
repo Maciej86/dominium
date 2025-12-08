@@ -30,4 +30,17 @@ function dominium_custom_theme_support() {
 
 }
 add_action('after_setup_theme', 'dominium_custom_theme_support');
+
+// Add class <body> - theme
+function dominium_body_class_theme($classes) {
+  $defaults = require get_template_directory() . "/inc/theme-defaults.php";
+  $theme = get_theme_mod('dominium_selected_theme', $defaults['main_settings']['theme']);
+
+  $classes[] = 'theme-' . $theme;
+  return $classes;
+}
+add_filter('body_class', 'dominium_body_class_theme');
+
+// Contact form 7 - disable p nad br
+add_filter( 'wpcf7_autop_or_not', '__return_false' );
 ?>

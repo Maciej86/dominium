@@ -23,7 +23,7 @@ if ($cookie_display_type === "full") {
 }
 ?>
 
-<div class="cookie <?php echo esc_attr( $cookie_class ); ?>">
+<div class="cookie <?php echo esc_attr( $cookie_class ); ?> js-cookie-dominium">
   <div class="container">
     <div class="cookie__content">
       <div class="cookie__content__text page_style">

@@ -9,7 +9,7 @@ function dominium_custom_category( $wp_customize ) {
   $wp_customize->add_panel( 'dominium_category_panel', array(
       'title'       => __( 'Ustawienia kategorii', 'dominium' ),
       'description' => __( 'Wybierz sposób wyświetlania daty i layoutu dla każdej kategorii.', 'dominium' ),
-      'priority'    => 40,
+      'priority'    => 50,
   ) );
 
   foreach ( $categories as $category ) {
@@ -58,7 +58,7 @@ function dominium_custom_category( $wp_customize ) {
 			),
     ));
 
-    /* Read more */
+    // Read more
     $readmore_setting_id = 'dominium_category_' . $cat_id . '_readmore_text';
     $wp_customize->add_setting( $readmore_setting_id, array(
 			'default'           => $defaults['category_texts']['read_more'],
@@ -70,7 +70,7 @@ function dominium_custom_category( $wp_customize ) {
 			'type'     => 'text',
     ));
 
-    /* See all */
+    // See all
     $seeall_setting_id = 'dominium_category_' . $cat_id . '_seeall_text';
     $wp_customize->add_setting( $seeall_setting_id, array(
 			'default'           => $defaults['category_texts']['see_all'],
@@ -82,7 +82,7 @@ function dominium_custom_category( $wp_customize ) {
 			'type'     => 'text',
     ));
 
-    /* Empty category */
+    // Empty category
     $empty_setting_id = 'dominium_category_' . $cat_id . '_empty_text';
     $wp_customize->add_setting( $empty_setting_id, array(
 			'default'           => $defaults['category_texts']['empty_category'],

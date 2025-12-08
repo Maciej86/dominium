@@ -6,7 +6,7 @@ function dominium_custom_cookie_support( $wp_customize ) {
   $wp_customize->add_section( "cookie_section", array(
     "title"       => __( "Ustawienia ciasteczek", "dominium" ),
     "description" => __( "Ustawienia wyświetlania informacji o ciasteczkach.", "dominium" ),
-    "priority"    => 80,
+    "priority"    => 90,
   ));
 
     // Visibility checkbox
@@ -99,7 +99,7 @@ function dominium_custom_cookie_support( $wp_customize ) {
     ]
   ));
 
-  // --- Nowe ustawienie dla blokowanych domen iframe ---
+  // Block domen iframe
   $wp_customize->add_setting( 'blocked_iframe_domains', [
     'default'           => "youtube.com\nvimeo.com\ngoogle.com/maps",
     'sanitize_callback' => function( $input ) {
@@ -116,22 +116,21 @@ function dominium_custom_cookie_support( $wp_customize ) {
   ]);
 
   $wp_customize->add_setting( 'cookie_iframe_text', array(
-    'default'           => 'Aby wyświetlić zawartość z <strong>{{DOMAIN}}</strong>, zaakceptuj wszystkie pliki cookie.',
+    'default'           => $defaults['cookie']['description_block_iframe'],
     'sanitize_callback' => function( $input ) {
-        // Zezwalamy tylko na <strong>
         return wp_kses( $input, array( 'strong' => array() ) );
     },
   ));
 
   $wp_customize->add_control( 'cookie_iframe_text', array(
       'type'        => 'textarea',
-      'section'     => 'cookie_section', // ← Twoja sekcja
+      'section'     => 'cookie_section',
       'label'       => __( 'Treść komunikatu blokady iframe', 'dominium' ),
       'description' => __( 'Użyj {{DOMAIN}} jako miejsca, gdzie pojawi się nazwa źródła (np. youtube.com).', 'dominium' ),
   ));
 
   $wp_customize->add_setting( 'cookie_iframe_button', array(
-      'default'           => 'Ustaw cookies',
+      'default'           => $defaults['cookie']['button_description_block_iframe'],
       'sanitize_callback' => 'sanitize_text_field',
   ));
 

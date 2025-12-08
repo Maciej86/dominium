@@ -17,6 +17,7 @@ require get_template_directory() . '/inc/get-post-date.php';    // helper functi
 if (is_customize_preview() || is_admin()) {
 
     // Main Customizer sections
+    require get_template_directory() . '/inc/customizer/customizer-main-settings.php';
     require get_template_directory() . '/inc/customizer/customizer-homepage.php';
     require get_template_directory() . '/inc/customizer/customizer-category.php';
     require get_template_directory() . '/inc/customizer/customizer-style-post.php';
@@ -44,21 +45,6 @@ if (is_customize_preview() || is_admin()) {
  */
 require get_template_directory() . '/inc/widget/dominium-single-post-widget.php';
 require get_template_directory() . '/inc/widget/dominium-simple-category-posts-widget.php';
-
-// ========== OPTIONAL: FRONT-END CONDITIONAL INCLUDES ==========
-/**
- * Example: load specific files only for certain types of pages (homepage, category, 404, etc.)
- * You can extend this section as your theme grows.
- */
-add_action( 'wp', function() {
-    // Examples:
-    // if ( is_front_page() ) {
-    //     require get_template_directory() . '/inc/homepage-functions.php';
-    // }
-    // if ( is_category() ) {
-    //     require get_template_directory() . '/inc/category-functions.php';
-    // }
-});
 
 // ========== DEVELOPER DEBUG ==========
 if ( defined( 'WP_DEBUG' ) && WP_DEBUG ) {

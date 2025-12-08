@@ -7,8 +7,8 @@
       <?php $post_date = dominium_get_post_date_for_custom_category(); ?>
         <?php if ($post_date) : ?>
             <div class="page_date">
-                <span class="material-symbols-outlined">calendar_month</span>
-                <?php echo $post_date; ?>
+              <span class="icon-calendar"></span>
+              <?php echo $post_date; ?>
             </div>
         <?php endif; ?>
     <?php endif; ?>

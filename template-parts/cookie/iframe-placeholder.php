@@ -1,4 +1,4 @@
-<div class="cookie_iframe_placeholder" data-iframe-src="<?php echo esc_attr( $args['iframe_src'] ?? '' ); ?>">
+<div class="cookie_iframe_placeholder js-cookie-placecholder-dominium" data-iframe-src="<?php echo esc_attr( $args['iframe_src'] ?? '' ); ?>">
   <p class="cookie_iframe_placeholder__content">
     <?php
       $domain = $args['domain'] ?? '{{DOMAIN}}';
