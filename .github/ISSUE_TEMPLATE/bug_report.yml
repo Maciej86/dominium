@@ -1,0 +1,25 @@
+name: "Zgłoszenie błędu"
+description: "Zgłoś problem w motywie"
+title: "[Błąd]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Dziękujemy za zgłoszenie błędu! Uzupełnij poniższe pola:"
+  - type: input
+    id: steps
+    attributes:
+      label: "Jak odtworzyć błąd?"
+      placeholder: "1. Wejdź na stronę... 2. Kliknij... 3. Zobaczysz błąd..."
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Co powinno się stać?"
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Co się stało w rzeczywistości?"
+  - type: input
+    id: version
+    attributes:
+      label: "Wersja motywu"

@@ -1,0 +1,32 @@
+name: "Prośba o pomoc / konfigurację"
+description: "Masz problem z użyciem motywu lub konfiguracją? Zgłoś to tutaj."
+title: "[Pomoc]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: "Prosimy o opisanie problemu, żebyśmy mogli pomóc:"
+  - type: textarea
+    id: description
+    attributes:
+      label: "Opisz problem"
+      placeholder: "Nie mogę zmienić koloru nagłówka / Menu się nie wyświetla..."
+  - type: input
+    id: site_url
+    attributes:
+      label: "Adres strony (jeśli publiczna)"
+      placeholder: "https://moja-strona.pl"
+  - type: input
+    id: wp_version
+    attributes:
+      label: "Wersja WordPressa"
+      placeholder: "np. 6.6"
+  - type: input
+    id: theme_version
+    attributes:
+      label: "Wersja motywu"
+      placeholder: "np. 1.0.0"
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Jakie kroki już próbowałeś?"

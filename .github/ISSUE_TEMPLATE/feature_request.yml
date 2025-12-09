@@ -1,0 +1,15 @@
+name: "Propozycja nowej funkcji"
+description: "Zaproponuj nową funkcję lub ulepszenie"
+title: "[Funkcja]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Opisz pomysł"
+      placeholder: "Chciałbym, żeby motyw miał opcję..."
+  - type: input
+    id: reason
+    attributes:
+      label: "Dlaczego to ważne?"
+      placeholder: "Ułatwi to użytkownikom..."
