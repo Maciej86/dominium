@@ -41,7 +41,7 @@ Motyw został zaprojektowany tak, abyś mógł szybko stworzyć nowoczesną stro
 1. Przejdź do strony pobierania motywu [GitHub - Dominium](https://github.com/Maciej86/dominium/releases/tag/dominium) i pobierz motyw.
 2. Dodanie motywu przez FTP:
 Przejdź do katalogu `wp-content -> themes` i tam umieść folder **dominium**
-3. Dodanie motywu przez WordPress: Kliknij kolejno `Wygląd -> Motywy -> Dodaj Motyw (przycisk u góry) -> Wyślij motyw na serwer (przycisk u góry)`. Następnie za pomocą formularza prześlij plik ZIP folderu **dominium**.
+3. Dodanie motywu przez WordPress: Kliknij kolejno `Wygląd -> Motywy -> Dodaj Motyw (przycisk u góry) -> Wyślij motyw na serwer (przycisk u góry)`. Następnie za pomocą formularza prześlij plik ZIP **dominium.zip**.
 4. W panelu WordPress przejdź do: `Wygląd → Motywy` i aktywuj **Dominium**
 5. Skonfiguruj motyw: `Wygląd → Dostosuj`
 
@@ -68,7 +68,7 @@ Obecnie motyw posiada dwa warianty kolorystyczne
 - Steel
 - Dracula
 
-Wersję kolorystyczną motywu można przygotować przy pomocy [Dominium Generator style](https://maciej86.github.io/dominium-generator-style/). Jest to proste narzędzie, które tworzy plik CSS, gotowy do wrzucenia na serwer. Jego pełny opis działania znajdziesz tu [dominium-generator-style](https://github.com/Maciej86/dominium-generator-style)
+Wersję kolorystyczną motywu można przygotować przy pomocy [Dominium Generator style](https://maciej86.github.io/dominium-generator-style/). Jest to proste narzędzie, które tworzy plik CSS, gotowy do wrzucenia na serwer. Jego pełny opis działania znajdziesz tu [dominium-generator-style](https://github.com/Maciej86/dominium-generator-style). 
 
 
 ## Ustawienia motywu strony głównej
