@@ -24,7 +24,7 @@ jobs:
           zip -r dominium.zip dominium
 
       - name: Upload ZIP to Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           files: build/dominium.zip
         env:
