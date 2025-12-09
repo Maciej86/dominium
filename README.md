@@ -40,7 +40,7 @@ Motyw został zaprojektowany tak, abyś mógł szybko stworzyć nowoczesną stro
 
 ## Instalacja
 
-1. Pobierz motyw z [GitHub](https://github.com/Maciej86/dominium-theme-wordpress) klikając `<> Code` -> `Download ZIP`
+1. Przejdź do strony pobierania motywu [GitHub - Dominium](https://github.com/Maciej86/dominium/releases/tag/dominium) i pobierz motyw.
 2. Dodanie motywu przez FTP:
 Przejdź do katalogu `wp-content -> themes` i tam umieść folder **dominium**
 3. Dodanie motywu przez WordPress: Kliknij kolejno `Wygląd -> Motywy -> Dodaj Motyw (przycisk u góry) -> Wyślij motyw na serwer (przycisk u góry)`. Następnie za pomocą formularza prześlij plik ZIP folderu **dominium**.
