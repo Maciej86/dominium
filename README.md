@@ -23,6 +23,7 @@ Motyw został zaprojektowany tak, abyś mógł szybko stworzyć nowoczesną stro
 - [Ustawienia ciasteczek (cookie)](#ustawienia-ciasteczek-cookie)
 - [Ustawienia strony kontaktowej](#ustawienia-strony-kontaktowej)
 - [Widżety motywu](#widżety-motywu)
+- [Wsparcie techniczne](#wsparcie-techniczne)
 - [W przygotowaniu](#w-przygotowaniu)
 - [Licencja](#licencja)
 - [Autor](#autor)
