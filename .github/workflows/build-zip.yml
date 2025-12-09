@@ -12,11 +12,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Read version from style.css
-        id: version
-        run: |
-          VERSION=$(grep -i 'Version:' style.css | head -n1 | awk '{print $2}')
-          echo "version=$VERSION" >> $GITHUB_OUTPUT
+      # Usunięto krok "Read version from style.css"
 
       - name: Prepare build directory
         run: |
@@ -30,12 +26,14 @@ jobs:
       - name: Create ZIP file
         run: |
           cd build
-          zip -r "dominium-v${{ steps.version.outputs.version }}.zip" dominium
+          # Stała nazwa pliku: dominium.zip
+          zip -r "dominium.zip" dominium
 
-      - name: Upload ZIP to Release as dominium.zip
+      - name: Upload ZIP to Release
         run: |
-          gh release upload ${{ github.event.release.tag_name }} "build/dominium-v${{ steps.version.outputs.version }}.zip" \
-            --repo $GITHUB_REPOSITORY --name dominium.zip
+          # Przesłanie pliku dominium.zip do Release
+          gh release upload ${{ github.event.release.tag_name }} "build/dominium.zip" \
+            --repo $GITHUB_REPOSITORY --name dominium.zip --clobber
         env:
+          # Użycie domyślnego tokena
           GH_TOKEN: ${{ github.token }}
-
