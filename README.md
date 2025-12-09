@@ -24,7 +24,7 @@ Motyw został zaprojektowany tak, abyś mógł szybko stworzyć nowoczesną stro
 - [Ustawienia strony kontaktowej](#ustawienia-strony-kontaktowej)
 - [Widżety motywu](#widżety-motywu)
 - [Wsparcie techniczne](#wsparcie-techniczne)
-- [W przygotowaniu](#w-przygotowaniu)
+- [Zmiany w projekcie](#zmiany-w-projekcie)
 - [Licencja](#licencja)
 - [Autor](#autor)
 
@@ -318,12 +318,9 @@ Poniżej bezpośrednie linki do odpowiedniego formularza.
 - [💡 Zaproponuj funkcję](https://github.com/Maciej86/dominium/issues/new?template=feature_request.yml) - jestem otwarty na nowe funkcje w motywie, aby **Dominium** był jeszcze bardziej przyjaznym motywem.
 - [➡️ Zgłoś błąd](https://github.com/Maciej86/dominium/issues/new?template=bug_report.yml) - znalazłeś błąd, poinformuj mnie o tym. Naprawię go tak szybko jak to możliwe.
 
-## W przygotowaniu
+## Zmiany w projekcie
 
-- [ ] Włączanie oraz wyłącznie opisu dla kategorii na stronie głównej oraz stronie kategorii
-- [ ] Zmiana ilości boksów na stronie głównej w sekcji "Odliczanie"
-- [ ] Wyświetlanie dowolnej strony lub wpisu na stronie głównej
-- [ ] Przygotowanie nawigacji wielopoziomowej
+Wszystkie zmiany w projekcie są [publikowane tutaj](https://github.com/Maciej86/dominium/releases/tag/dominium).
 
 ## Licencja
 
