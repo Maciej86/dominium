@@ -307,6 +307,13 @@ Motyw posiada dwa widgety, z których można skorzystać.
 
 ## Wsparcie techniczne
 
+Wsparcie techniczne odbywa się tylko i wyłącznie na stronie **Github**, w zakładce **Issuses** przy użyciu odpowiedniego formularza.
+
+Jak zgłociś pomoc, nową funkcje lub błąd.
+Na stronie projektu [Dominium](https://github.com/Maciej86/dominium) w góryn menu przejdź do zakładki **Issues**. Następnie kliknij **New issue**. Pojawi się okno z wyborem tematów do zgłoszenia. Po wyborze tematu, na przykład "Propozycja nowej funkcji", wyświetli się formularz. Po uzupełnieniu formularza klikamy przycisk **Create**.
+
+Poniżej bezpośrednie linki do odpowiedniego formularza. 
+
 - [🤝 Potrzebuję pomocy](https://github.com/Maciej86/dominium/issues/new?template=support_request.yml) - napisz jeżeli masz problem z konfiguracją pisz śmiało.
 - [💡 Zaproponuj funkcję](https://github.com/Maciej86/dominium/issues/new?template=feature_request.yml) - jestem otwarty na nowe funkcje w motywie, aby **Dominium** był jeszcze bardziej przyjaznym motywem.
 - [➡️ Zgłoś błąd](https://github.com/Maciej86/dominium/issues/new?template=bug_report.yml) - znalazłeś błąd, poinformuj mnie o tym. Naprawię go tak szybko jak to możliwe.
