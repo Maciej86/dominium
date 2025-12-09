@@ -6,7 +6,6 @@ on:
 
 jobs:
   build:
-    name: Build ZIP package
     runs-on: ubuntu-latest
 
     steps:
@@ -24,8 +23,11 @@ jobs:
           zip -r dominium.zip dominium
 
       - name: Upload ZIP to Release
-        uses: softprops/action-gh-release@v2
+        uses: actions/upload-release-asset@v1
         with:
-          files: build/dominium.zip
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: build/dominium.zip
+          asset_name: dominium.zip
+          asset_content_type: application/zip
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
