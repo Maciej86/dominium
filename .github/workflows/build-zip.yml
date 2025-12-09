@@ -15,7 +15,7 @@ jobs:
       - name: Read version from style.css
         id: version
         run: |
-          VERSION=$(grep -i 'Version:' wp-content/themes/dominium/style.css | head -n1 | awk '{print $2}')
+          VERSION=$(grep -i 'Version:' style.css | head -n1 | awk '{print $2}')
           echo "version=$VERSION" >> $GITHUB_OUTPUT
 
       - name: Prepare build directory
@@ -37,4 +37,5 @@ jobs:
           gh release upload ${{ github.event.release.tag_name }} "build/dominium-v${{ steps.version.outputs.version }}.zip" \
             --repo $GITHUB_REPOSITORY --name dominium.zip
         env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}
+          GH_TOKEN: ${{ github.token }}
+
