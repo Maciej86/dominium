@@ -41,4 +41,4 @@ jobs:
           # Upload pliku, ale w release nazwany dominium.zip
           gh release upload ${{ github.event.release.tag_name }} "build/dominium-v${{ steps.version.outputs.version }}.zip" --repo $GITHUB_REPOSITORY --name dominium.zip
         env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
