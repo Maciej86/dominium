@@ -5,7 +5,7 @@ Motyw został zaprojektowany tak, abyś mógł szybko stworzyć nowoczesną stro
 
 ## Nawigacja
 
-- [Najwżniejsze funkcje](#️najważniejsze-funkcje)
+- [Najważniejsze funkcje](#najważniejsze-funkcje)
 - [Instalacja](#instalacja)
 - [Konfiguracja nawigacji](#konfiguracja-nawigacji)
 - [Ustawienia główne motywu](#ustawienia-główne-motywu)
@@ -22,7 +22,7 @@ Motyw został zaprojektowany tak, abyś mógł szybko stworzyć nowoczesną stro
 - [Ustawienia stopki](#ustawienia-stopki)
 - [Ustawienia ciasteczek (cookie)](#ustawienia-ciasteczek-cookie)
 - [Ustawienia strony kontaktowej](#ustawienia-strony-kontaktowej)
-- [Widżety motywu](#widżet-motywu)
+- [Widżety motywu](#widżety-motywu)
 - [W przygotowaniu](#w-przygotowaniu)
 - [Licencja](#licencja)
 - [Autor](#autor)
