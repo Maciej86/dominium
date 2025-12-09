@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: "Dziękujemy za zgłoszenie błędu! Uzupełnij poniższe pola:"
-  - type: input
+  - type: textarea
     id: steps
     attributes:
       label: "Jak odtworzyć błąd?"
