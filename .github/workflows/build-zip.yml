@@ -25,15 +25,20 @@ jobs:
             --exclude=.git/ \
             --exclude=.github/ \
             --exclude=README.md \
+            --exclude=LICENSE \
+            --exclude=CHANGELOG.md \
             --exclude=*.zip \
+            --exclude=node_modules/
 
       - name: Create ZIP file
         run: |
           cd build
+          # Tworzymy ZIP wewnętrznie z wersją w nazwie dla porządku
           zip -r "dominium-v${{ steps.version.outputs.version }}.zip" dominium
 
-      - name: Upload ZIP to Release
+      - name: Upload ZIP to Release as dominium.zip
         run: |
-          gh release upload ${{ github.event.release.tag_name }} "build/dominium-v${{ steps.version.outputs.version }}.zip" --repo $GITHUB_REPOSITORY
+          # Upload pliku, ale w release nazwany dominium.zip
+          gh release upload ${{ github.event.release.tag_name }} "build/dominium-v${{ steps.version.outputs.version }}.zip" --repo $GITHUB_REPOSITORY --name dominium.zip
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
