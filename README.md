@@ -307,9 +307,9 @@ Motyw posiada dwa widgety, z których można skorzystać.
 
 ## Wsparcie techniczne
 
-- [🤝 Potrzebuję pomocy](https://github.com/TWOJ-LOGIN/TWOJ-REPO/issues/new?template=support_request.yml) - napisz jeżeli masz problem z konfiguracją pisz śmiało.
-- [💡 Zaproponuj funkcję](https://github.com/TWOJ-LOGIN/TWOJ-REPO/issues/new?template=feature_request.yml) - jestem otwarty na nowe funkcje w motywie, aby **Dominium** był jeszcze bardziej przyjaznym motywem.
-- [➡️ Zgłoś błąd](https://github.com/TWOJ-LOGIN/TWOJ-REPO/issues/new?template=bug_report.yml) - znalazłeś błąd, poinformuj mnie o tym. Naprawię go tak szybko jak to możliwe.
+- [🤝 Potrzebuję pomocy](https://github.com/Maciej86/dominium/issues/new?template=support_request.yml) - napisz jeżeli masz problem z konfiguracją pisz śmiało.
+- [💡 Zaproponuj funkcję](https://github.com/Maciej86/dominium/issues/new?template=feature_request.yml) - jestem otwarty na nowe funkcje w motywie, aby **Dominium** był jeszcze bardziej przyjaznym motywem.
+- [➡️ Zgłoś błąd](https://github.com/Maciej86/dominium/issues/new?template=bug_report.yml) - znalazłeś błąd, poinformuj mnie o tym. Naprawię go tak szybko jak to możliwe.
 
 ## W przygotowaniu
 
