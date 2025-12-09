@@ -304,6 +304,12 @@ Motyw posiada dwa widgety, z których można skorzystać.
 1. `Ostatnie wpisy z bieżącej kategorii`, wyświetla podaną ilość wpisów z aktualnej kategorii, pomijając aktualnie czytany wpis
 2. `Wpis: pojedynczy post` - wyświetla pojedyńczy wpis lub stronę. Dodatkowymi ustawieniami są pokazywanie lub ukrywanie daty oraz miniaturki.
 
+## Wsparcie techniczne
+
+- [🤝 Potrzebuję pomocy](https://github.com/TWOJ-LOGIN/TWOJ-REPO/issues/new?template=support_request.yml) - napisz jeżeli masz problem z konfiguracją pisz śmiało.
+- [💡 Zaproponuj funkcję](https://github.com/TWOJ-LOGIN/TWOJ-REPO/issues/new?template=feature_request.yml) - jestem otwarty na nowe funkcje w motywie, aby **Dominium** był jeszcze bardziej przyjaznym motywem.
+- [➡️ Zgłoś błąd](https://github.com/TWOJ-LOGIN/TWOJ-REPO/issues/new?template=bug_report.yml) - znalazłeś błąd, poinformuj mnie o tym. Naprawię go tak szybko jak to możliwe.
+
 ## W przygotowaniu
 
 - [ ] Włączanie oraz wyłącznie opisu dla kategorii na stronie głównej oraz stronie kategorii
