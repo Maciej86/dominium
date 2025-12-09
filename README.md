@@ -1,6 +1,6 @@
 # Dominium
 
-Dominium to motyw strony dla systemu WordPress. Poniższa dokumentacja jest dokumentacją użytkownika motywu. Konfiguracja motywu odbywa się po przez `Wygląd => Dostosuj`.
+Nowoczesny motyw WordPress z rozbudowanym panelem Customizera
 Motyw został zaprojektowany tak, abyś mógł szybko stworzyć nowoczesną stronę firmową bez znajomości kodu.
 
 ## Nawigacja
@@ -24,9 +24,7 @@ Motyw został zaprojektowany tak, abyś mógł szybko stworzyć nowoczesną stro
 - [Ustawienia strony kontaktowej](#ustawienia-strony-kontaktowej)
 - [Widżety motywu](#widżety-motywu)
 - [Wsparcie techniczne](#wsparcie-techniczne)
-- [Zmiany w projekcie](#zmiany-w-projekcie)
-- [Licencja](#licencja)
-- [Autor](#autor)
+- [O motywie Dominium](#o-motywie-dominium)
 
 ## Najważniejsze funkcje
 
@@ -314,20 +312,28 @@ Na stronie projektu [Dominium](https://github.com/Maciej86/dominium) w górym me
 
 Poniżej bezpośrednie linki do odpowiedniego formularza. 
 
-- [🤝 Potrzebuję pomocy](https://github.com/Maciej86/dominium/issues/new?template=support_request.yml) - napisz jeżeli masz problem z konfiguracją pisz śmiało.
-- [💡 Zaproponuj funkcję](https://github.com/Maciej86/dominium/issues/new?template=feature_request.yml) - jestem otwarty na nowe funkcje w motywie, aby **Dominium** był jeszcze bardziej przyjaznym motywem.
-- [➡️ Zgłoś błąd](https://github.com/Maciej86/dominium/issues/new?template=bug_report.yml) - znalazłeś błąd, poinformuj mnie o tym. Naprawię go tak szybko jak to możliwe.
+- [🤝 Potrzebuję pomocy](https://github.com/Maciej86/dominium/issues/new?template=support_request.yml)
+- [💡 Zaproponuj funkcję](https://github.com/Maciej86/dominium/issues/new?template=feature_request.yml)
+- [➡️ Zgłoś błąd](https://github.com/Maciej86/dominium/issues/new?template=bug_report.yml)
 
-## Zmiany w projekcie
+Wszystkie zgłoszenia prowadzone są przez zakładkę **Issues** na GitHub.
+
+## O motywie Dominium
+
+### Zmiany w projekcie
 
 Wszystkie zmiany w projekcie są [publikowane tutaj](https://github.com/Maciej86/dominium/releases/tag/dominium).
 
-## Licencja
+### Wymagania
+
+Motyw działa na WordPress od wersji 6.7 lub nowszej. 
+
+### Licencja
 
 Dominium jest udostępniany na licencji **GNU General Public License v2 lub nowszej (GPL)**.  
 Możesz go dowolnie używać, modyfikować i rozpowszechniać.
 
-## Autor
+### Autor
 
 **Autor:** [Maciej](https://github.com/Maciej86)  
 **Repozytorium:** [https://github.com/maciej/dominium](https://github.com/Maciej86/dominium-theme-wordpress)
