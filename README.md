@@ -31,7 +31,8 @@ Motyw został zaprojektowany tak, abyś mógł szybko stworzyć nowoczesną stro
 
 - ✅ Ustawienia motywu dostępne w **Customizerze**
 - ✅ Możliwość **włączania, wyłączania i sortowania sekcji** strony głównej
-- ✅ Sekcje: **Nagłówek, Kroki, Odliczanie, Kontakt, Blog, Produkty**
+- ✅ Sekcje które można **wyłączyć, włączyć** oraz **sortować** na stroie głownej: **Kroki, Odliczanie, Wpisy z kategorii, Kontakt, druga sekcja wpisów z kategorii**
+- ✅ Ustawienia wyglądu wpisów kategorii
 - ✅ Automatyczne wartości domyślne, jeśli użytkownik nie wprowadzi własnych treści
 - ✅ Responsywny układ – działa na desktopie, tablecie i telefonie
 - ✅ Prosty, lekki kod, gotowy do dalszej rozbudowy
