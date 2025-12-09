@@ -32,7 +32,7 @@ Motyw został zaprojektowany tak, abyś mógł szybko stworzyć nowoczesną stro
 
 - ✅ Ustawienia motywu dostępne w **Customizerze**
 - ✅ Możliwość **włączania, wyłączania i sortowania sekcji** strony głównej
-- ✅ Sekcje które można **wyłączyć, włączyć** oraz **sortować** na stroie głownej: **Kroki, Odliczanie, Wpisy z kategorii, Kontakt, druga sekcja wpisów z kategorii**
+- ✅ Sekcje które można **wyłączyć, włączyć** oraz **sortować** na stroie głównej: **Kroki, Odliczanie, Wpisy z kategorii, Kontakt, druga sekcja wpisów z kategorii**
 - ✅ Ustawienia wyglądu wpisów kategorii
 - ✅ Automatyczne wartości domyślne, jeśli użytkownik nie wprowadzi własnych treści
 - ✅ Responsywny układ – działa na desktopie, tablecie i telefonie
@@ -66,7 +66,7 @@ W obu przypadkach nawigacja jest jedno poziomowa.
 
 ### Motyw kolorystyczny
 
-Obecnie motyw posiada dwa warianty kolorystczne
+Obecnie motyw posiada dwa warianty kolorystyczne
 - Steel
 - Dracula
 
@@ -79,16 +79,16 @@ Wersję kolorystyczną motywu można przygotować przy pomocy [Dominium Generato
 
 > 💡 Strona główna składa się z kilku sekcji, które możesz **włączać, wyłączać** i **zmieniać kolejność**.
 
-Obecnie strona główna skłąda się z następujących sekcji:
+Obecnie strona główna składa się z następujących sekcji:
 
 - **Nagłówek** - jest to część ze zdjęciem w tle
-- **Kroki** - jest to sekcja z trzema boksami, która każa zwiera tyuł oraz treść
+- **Kroki** - jest to sekcja z trzema boksami, która każda zwiera tytuł oraz treść
 - **Odliczanie** - jest to sekcja, gdzie jest animacja odliczania zdeklarowanych wartości wraz z podpisem
 - **Wpisy z kategorii (Produkty)** - jest to pierwsza tego typu sekcja, w której można wyświetlić wpisy z wybranej kategorii
 - **Napisz do nas** - jest to wąska sekcja ze zdjęciem oraz przyciskiem kierującym do dowolnej podstrony
 - **Wpisy z kategorii (Blog)** - jest to druga sekcja tego typu, gdzie można wyświetlić wpisy z wybranej kategorii
 
-Nawigacja czy stopka nie podlegają opcji wyłączenia czy zminy kolejności.
+Nawigacja czy stopka nie podlegają opcji wyłączenia czy zmiany kolejności.
 
 ---
 
@@ -155,7 +155,7 @@ Sekcja wyświetlająca cztery boksy z odliczaniem. Każda z wartości jest odlic
 **Wyświetlana zawartość:**
 
 - w przypadku braku edycji treści, zostanie wyświetlony tekst domyślny
-- jeżeli chcemy uzyskać indeks górny na przykład metry kwadratowe, wóczas znak należy otoczyć znacznikiem `<sup></sup>` na przykład `<sup>2</sup>`. Na stronie zostanie wyświetlone m<sup>2</sup>
+- jeżeli chcemy uzyskać indeks górny na przykład metry kwadratowe, wówczas znak należy otoczyć znacznikiem `<sup></sup>` na przykład `<sup>2</sup>`. Na stronie zostanie wyświetlone m<sup>2</sup>
 - tytuł odliczania, jest zawsze wyświetlany wielkimi literami, niezależnie od wprowadzonego tekstu w konfiguratorze
 
 ---
@@ -185,20 +185,20 @@ Sekcja wyświetlająca nagłówek tekst oraz przycisk, prowadzący do dowolnej s
 
     🛠️ Wygląd => Dostosuj => Ustawienia motywu strony głównej => Sekcja - Produkty, Blog
 
-Obie sekcje na stronie głównej wyświetlają wpisy z wybranych kategorii. W przypadku skecji Blog, można podać alternatywny nagłówek dla tej sekcji. Jeżeli przy tworzeniu koategrii został podany opis, zostanie on wyświetlony na stronie głównej.
+Obie sekcje na stronie głównej wyświetlają wpisy z wybranych kategorii. W przypadku sekcji Blog, można podać alternatywny nagłówek dla tej sekcji. Jeżeli przy tworzeniu kategrii został podany opis, zostanie on wyświetlony na stronie głównej.
 
 **Personalizacja**
 
 - wybór kategorii
-- ilość wpisów do wyświetlenia. Domyśllnie 3 wpisy, Podając 0 wyświetla wszystkie wpisy
+- ilość wpisów do wyświetlenia. Domyślnie 3 wpisy, Podając 0 wyświetla wszystkie wpisy
 - dla kategorii blog tytuł dla strony głównej
 
 **Wyświetlana zawartość:**
 
-- domyślnie każada kategoria wyświetli maksymalnie 3 ostatnie artykuły
+- domyślnie każda kategoria wyświetli maksymalnie 3 ostatnie artykuły
 - tytuł kategorii
 - opis kategorii
-- w przypadku ustawień dla **Blog** domyślny tytuł kategorii na stronnie głównej to **Ostatnie wpisy na blogu**
+- w przypadku ustawień dla **Blog** domyślny tytuł kategorii na stronie głównej to **Ostatnie wpisy na blogu**
 
 ## Ustawienia kategorii
 
@@ -224,26 +224,26 @@ Obecnie motyw posiada dwa style wpisów
 
 **Personalizacja**
 
-Personalizacja każdego układu jest indywidualna dla każego z nich. 
+Personalizacja każdego układu jest indywidualna dla każdego z nich. 
 
 ## Ustawienia belki nad stroną
 
     🛠️ Wygląd => Dostosuj => Ustawienia belki nad menu
 
-Belka nad menu jest to element strony wyświetlany nad nawigacją i logo. W tej sekcji możemy zdefiniować podstawowy adres e-mail, numer telefonu oraz linki do portali społecznościowych, które są wyświetlane rónież w stopce strony.
+Belka nad menu jest to element strony wyświetlany nad nawigacją i logo. W tej sekcji możemy zdefiniować podstawowy adres e-mail, numer telefonu oraz linki do portali społecznościowych, które są wyświetlane również w stopce strony.
 
 **Personalizacja**
 
-- wyłączanie lub włączanie skecji - w przypadku wyłączenai sekcji dane kontaktowe oraz linki do portali społecznościowych będą wyświetlane w stopce.
+- wyłączanie lub włączanie sekcji - w przypadku wyłączenia sekcji dane kontaktowe oraz linki do portali społecznościowych będą wyświetlane w stopce.
 - podstawowy numer telefonu
 - podstawowy adres e-mail
-- linki do facebook, instagram, tik tok oraz platforam x
+- linki do facebook, instagram, tik tok oraz platforma x
 
 ## Ustawienia stopki
 
     🛠️ Wygląd => Dostosuj => Ustawienia stopki
 
-Linki do portali społecznościowych oraz dane do kolumny **Kontakt** uzupełniamy w `Wygląd => Dostosuj => Ustawienia belki nad menu`. Natomiast nawigację tworzymy w ustawieniach Wordpress `Wygląd => Menu` lub w `Wygląd => Dostosuj => Menu` 
+Linki do portali społecznościowych oraz dane do kolumny **Kontakt** uzupełniamy w `Wygląd => Dostosuj => Ustawienia belki nad menu`. Natomiast nawigację tworzymy w ustawieniach WordPress `Wygląd => Menu` lub w `Wygląd => Dostosuj => Menu` 
 
 **Personalizacja**
 
@@ -263,9 +263,9 @@ Personalizacji głównie podlega pierwsza kolumna w stopce.
 
     🛠️ Wygląd => Dostosuj => Ustawienia cookie
 
-Motyw korzysta z własnego systmu obsługi ciasteczek. Domyślnie jest ona włączona. Jeżeli zostanie on wyłączony możesz zainstalować dowolną wtyczkę do obsługi ciastek.
+Motyw korzysta z własnego systemu obsługi ciasteczek. Domyślnie jest ona włączona. Jeżeli zostanie on wyłączony możesz zainstalować dowolną wtyczkę do obsługi ciastek.
 
-Użytkownik ma do wyboru, jakiego typu ciastka chce akceptować. Jeżeli wybierze tylko te niezbędne do działania witryny, wówczas na stronie nie zostaną wyświetlone mapy google oraz filmy z YouTube, a w ich miejsce zostanie wyświetlona o konieczności zaakceptowania wszystkich ciastek.
+Użytkownik ma do wyboru, jakiego typu ciastka chce akceptować. Jeżeli wybierze tylko te niezbędne do działania witryny, wówczas na stronie nie zostaną wyświetlone mapy Google oraz filmy z YouTube, a w ich miejsce zostanie wyświetlona o konieczności zaakceptowania wszystkich ciastek.
 
 Jeżeli w ustawieniach zostanie podana strona z polityką cookies, zostanie wyświetlony trzeci przycisk, kierujący do wybranej strony.
 
@@ -275,8 +275,8 @@ Jeżeli w ustawieniach zostanie podana strona z polityką cookies, zostanie wyś
 - treść komunikatu o ciasteczkach
 - strona z polityką cookies
 - tekst dla przycisku "Akceptuj wszystkie"
-- takst dla przycisku "Akceptuj niezbędne"
-- tekst dla przyisku "Więcej informacji" (przycisk prowadzący do strony z polityką cookie)
+- tekst dla przycisku "Akceptuj niezbędne"
+- tekst dla przycisku "Więcej informacji" (przycisk prowadzący do strony z polityką cookie)
 - blokowanie domen w iframe - materiały z jakich stron mają być blokowane, kiedy będą osadzone za pomocą iframe
 - treść komunikatu blokady na iframe - wyświetlana treść zamiast materiału wideo lub mapy, kiedy nie są zaakceptowane wszystkie ciasteczka
 - tekst przycisku blokady iframe - przycisk pokazujący ponownie wybór akceptacji ciastek
@@ -286,15 +286,15 @@ Jeżeli w ustawieniach zostanie podana strona z polityką cookies, zostanie wyś
 
     🛠️ Wygląd => Dostosuj => Ustawienia strony kontaktowej
 
-Obecnie istnieje tylko jeden szablon strony kontaktowej. Z lewej stony dane kontaktowe, z prawej strony formularz. Niżej mapa z Google Maps, na całą szerokośćstrony.
+Obecnie istnieje tylko jeden szablon strony kontaktowej. Z lewej strony dane kontaktowe, z prawej strony formularz. Niżej mapa z Google Maps, na całą szerokość strony.
 
 Motyw domyślnie wspiera formularz kontaktowy tworzony przy pomocy [Contact Form 7](https://wordpress.org/plugins/contact-form-7/). 
 
 **Konfiguracja**
 
-1. Utwórz stronę, która będzie stroną kontaktową. W ustawieniach tej strony wybierz `Szablon` a z rozwijanej listy wybierz `Kontakt - podstawowy`. Następnie opbólikuj stronę.
+1. Utwórz stronę, która będzie stroną kontaktową. W ustawieniach tej strony wybierz `Szablon` a z rozwijanej listy wybierz `Kontakt - podstawowy`. Następnie opóblikuj stronę.
 2. Utwórz stronę z danymi kontaktowymi w dowolnej formie.
-3. Przejdź do `Wygląd => Dostosuj => Ustawienia strony kontaktowej`. W **Strona z danymi kontaktowymi** wybierz stronę, w której znajdują siędane kontaktowe z punktu 2. W **Shortcode formularza kontaktowego** wpisz shortcode z Contact Form 7 twojego formularza kontaktowego. W **Mapa Google (pełny kod iframe)** podaj pełny kod iframe dla mapy google.
+3. Przejdź do `Wygląd => Dostosuj => Ustawienia strony kontaktowej`. W **Strona z danymi kontaktowymi** wybierz stronę, w której znajdują się dane kontaktowe z punktu 2. W **Shortcode formularza kontaktowego** wpisz shortcode z Contact Form 7 twojego formularza kontaktowego. W **Mapa Google (pełny kod iframe)** podaj pełny kod iframe dla mapy Google.
 
 ## Widżety motywu
 
@@ -303,14 +303,14 @@ Motyw domyślnie wspiera formularz kontaktowy tworzony przy pomocy [Contact Form
 Motyw posiada dwa widgety, z których można skorzystać.
 
 1. `Ostatnie wpisy z bieżącej kategorii`, wyświetla podaną ilość wpisów z aktualnej kategorii, pomijając aktualnie czytany wpis
-2. `Wpis: pojedynczy post` - wyświetla pojedyńczy wpis lub stronę. Dodatkowymi ustawieniami są pokazywanie lub ukrywanie daty oraz miniaturki.
+2. `Wpis: pojedynczy post` - wyświetla pojedynczy wpis lub stronę. Dodatkowymi ustawieniami są pokazywanie lub ukrywanie daty oraz miniaturki.
 
 ## Wsparcie techniczne
 
 Wsparcie techniczne odbywa się tylko i wyłącznie na stronie **Github**, w zakładce **Issuses** przy użyciu odpowiedniego formularza.
 
-Jak zgłociś pomoc, nową funkcje lub błąd.
-Na stronie projektu [Dominium](https://github.com/Maciej86/dominium) w góryn menu przejdź do zakładki **Issues**. Następnie kliknij **New issue**. Pojawi się okno z wyborem tematów do zgłoszenia. Po wyborze tematu, na przykład "Propozycja nowej funkcji", wyświetli się formularz. Po uzupełnieniu formularza klikamy przycisk **Create**.
+Jak zgłosić pomoc, nową funkcje lub błąd.
+Na stronie projektu [Dominium](https://github.com/Maciej86/dominium) w górym menu przejdź do zakładki **Issues**. Następnie kliknij **New issue**. Pojawi się okno z wyborem tematów do zgłoszenia. Po wyborze tematu, na przykład "Propozycja nowej funkcji", wyświetli się formularz. Po uzupełnieniu formularza klikamy przycisk **Create**.
 
 Poniżej bezpośrednie linki do odpowiedniego formularza. 
 
@@ -322,7 +322,7 @@ Poniżej bezpośrednie linki do odpowiedniego formularza.
 
 - [ ] Włączanie oraz wyłącznie opisu dla kategorii na stronie głównej oraz stronie kategorii
 - [ ] Zmiana ilości boksów na stronie głównej w sekcji "Odliczanie"
-- [ ] Wyświetlaenie dowolnej strony lub wpisu na stronie głównej
+- [ ] Wyświetlanie dowolnej strony lub wpisu na stronie głównej
 - [ ] Przygotowanie nawigacji wielopoziomowej
 
 ## Licencja
