@@ -41,6 +41,10 @@
   border-left: none;
 }
 
+.header_contact__contact__list__item:first-child {
+  border-left: var(--header-contact-list-border);
+}
+
 .header_contact__contact__list__item a {
   display: flex;
   align-items: center;

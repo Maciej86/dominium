@@ -14,18 +14,22 @@
   <div class="container">
     <div class="header_contact__contact">
       <ul class="header_contact__contact__list">
+      <?php if ( !empty( $up_menu_email ) ) : ?>
         <li class="header_contact__contact__list__item">
           <a href="mailto:<?php echo esc_html( $up_menu_email ); ?>">
             <span class="icon-alternate_email"></span>
             <?php echo esc_html( $up_menu_email ); ?>
           </a>
         </li>
+      <?php endif; ?>
+      <?php if ( !empty( $up_menu_phone ) ) : ?>
         <li class="header_contact__contact__list__item">
           <a href="tel:<?php echo esc_attr(preg_replace('/\s+|-/', '', $up_menu_phone)); ?>">
             <span class="icon-stay_current_portrait"></span>
             <?php echo esc_html( $up_menu_phone ); ?>
           </a>
         </li>
+      <?php endif; ?>
       </ul>
       <div class="header_contact__contact__social">
 

@@ -83,14 +83,18 @@
         <div class="footer__box">
           <h3 class="footer__box__title-small">kontakt</h3>
           <ul class="footer__box__list-contact">
+          <?php if ( !empty( $up_menu_phone ) ) : ?>
             <li>
               <span class="icon-stay_current_portrait"></span>
               <a href="tel:<?php echo esc_attr(preg_replace('/\s+|-/', '', $up_menu_phone)); ?>"><?php echo esc_html( $up_menu_phone ); ?></a>
             </li>
+          <?php endif; ?>
+          <?php if ( !empty( $up_menu_email ) ) : ?>
             <li>
               <span class="icon-alternate_email"></span>
               <a href="mailto:<?php echo esc_html( $up_menu_email ); ?>"><?php echo esc_html( $up_menu_email ); ?></a>
             </li>
+          <?php endif; ?>
           </ul>
         </div>
         <div class="footer__box">
