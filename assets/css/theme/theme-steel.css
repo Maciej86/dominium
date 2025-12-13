@@ -250,7 +250,7 @@
   --asside-box-header-link-text-decoration: none;
   --asside-box-header-hover-link-color: var(--warning);
   --asside-box-header-hover-link-text-decoration: none;
-  --asside-box-line-height: inherit;
+  --asside-box-line-height: 1.4;
   --asside-box-img-opacity: 0.8;
   --asside-box-li-padding: 10px;
   --asside-box-li-border-bottom: 1px dashed var(--light);

@@ -68,20 +68,19 @@ function dominium_custom_homepage_posts_support( $wp_customize ) {
   ]);
 
   // Separator
-  $wp_customize->add_setting( 'separator', [
+  $wp_customize->add_setting( 'separator_1', [
     'sanitize_callback' => 'sanitize_text_field',
   ]);
-  
-  $wp_customize->add_control( new WP_Customize_Control(
-    $wp_customize,
-    'separator',
-    [
+
+  $wp_customize->add_control( 'separator_homepage_1', [
       'section'     => 'homepage_posts',
-      'settings'    => 'separator',
-      'type'        => 'hidden',
+      'settings'    => 'separator_1',
+      'type'        => 'text',
+      'input_attrs' => [
+          'style' => 'display:none;',
+      ],
       'description' => '<hr style="margin:15px 0;border:0;border-top:1px solid #ccc;">',
-    ]
-  ));
+  ]);
 
   // === SETTINGS BLOG ==== 
 

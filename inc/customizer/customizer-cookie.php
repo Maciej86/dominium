@@ -84,20 +84,19 @@ function dominium_custom_cookie_support( $wp_customize ) {
   ));
 
   // Separator
-  $wp_customize->add_setting( 'separator_cookie_1', [
+  $wp_customize->add_setting( 'separator_1', [
     'sanitize_callback' => 'sanitize_text_field',
   ]);
-  
-  $wp_customize->add_control( new WP_Customize_Control(
-    $wp_customize,
-    'separator_cookie_1',
-    [
+
+  $wp_customize->add_control( 'separator_cookie_1', [
       'section'     => 'cookie_section',
-      'settings'    => 'separator_cookie_1',
-      'type'        => 'hidden',
+      'settings'    => 'separator_1',
+      'type'        => 'text',
+      'input_attrs' => [
+          'style' => 'display:none;',
+      ],
       'description' => '<hr style="margin:15px 0;border:0;border-top:1px solid #ccc;">',
-    ]
-  ));
+  ]);
 
   // Block domen iframe
   $wp_customize->add_setting( 'blocked_iframe_domains', [
@@ -141,20 +140,19 @@ function dominium_custom_cookie_support( $wp_customize ) {
   ));
 
   // Separator
-  $wp_customize->add_setting( 'separator_cookie_2', [
+  $wp_customize->add_setting( 'separator_2', [
     'sanitize_callback' => 'sanitize_text_field',
   ]);
-  
-  $wp_customize->add_control( new WP_Customize_Control(
-    $wp_customize,
-    'separator_cookie_2',
-    [
+
+  $wp_customize->add_control( 'separator_cookie_2', [
       'section'     => 'cookie_section',
-      'settings'    => 'separator_cookie_2',
-      'type'        => 'hidden',
+      'settings'    => 'separator_2',
+      'type'        => 'text',
+      'input_attrs' => [
+          'style' => 'display:none;',
+      ],
       'description' => '<hr style="margin:15px 0;border:0;border-top:1px solid #ccc;">',
-    ]
-  ));
+  ]);
 
   // Display type (full / modal)
   $wp_customize->add_setting( 'cookie_display_type', array(

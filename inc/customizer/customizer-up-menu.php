@@ -54,20 +54,19 @@ function dominium_custom_up_menu_support( $wp_customize ) {
     "description" => __( "Adres ten będzie przypisany również do stopki", "dominium" ),
   ));
 
-  $wp_customize->add_setting( 'separator_1', [
+  $wp_customize->add_setting( 'separator', [
     'sanitize_callback' => 'sanitize_text_field',
   ]);
-  
-  $wp_customize->add_control( new WP_Customize_Control(
-    $wp_customize,
-    'separator_1',
-    [
+
+  $wp_customize->add_control( 'separator_control', [
       'section'     => 'up_menu_section',
-      'settings'    => 'separator_1',
-      'type'        => 'hidden',
+      'settings'    => 'separator',
+      'type'        => 'text',
+      'input_attrs' => [
+          'style' => 'display:none;',
+      ],
       'description' => '<hr style="margin:15px 0;border:0;border-top:1px solid #ccc;">',
-    ]
-  ));
+  ]);
 
   // Facebook
   $wp_customize->add_setting( "up_menu_facebook", array(
@@ -121,7 +120,7 @@ function dominium_custom_up_menu_support( $wp_customize ) {
     ));
   
     // Add contrl email customizer
-    $wp_customize->add_control( "up_menu_tiktok_control", array(
+    $wp_customize->add_control( "up_menu_x_control", array(
       "label"    => __( "Profil na X", "dominium" ),
       "section"  => "up_menu_section",
       "settings" => "up_menu_x",

@@ -23,6 +23,10 @@
   font-weight: var(--header-contact-font-weight);
 }
 
+.header_contact__contact__list--hidden {
+  display: none;
+}
+
 .header_contact__contact__list__item {
   border-left: var(--header-contact-list-border);
   border-right: var(--header-contact-list-border);

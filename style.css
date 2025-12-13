@@ -26,7 +26,6 @@ body {
   height: 100%;
   margin: 0;
   background-color: var(--body-bg);
-  font-family: "Archivo", sans-serif;
   font-size: var(--body-font-size);
   font-weight: var(--body-font-weight);
   color: var(--body-color);

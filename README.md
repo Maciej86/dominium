@@ -35,6 +35,7 @@ Motyw został zaprojektowany tak, abyś mógł szybko stworzyć nowoczesną stro
 - ✅ Automatyczne wartości domyślne, jeśli użytkownik nie wprowadzi własnych treści
 - ✅ Responsywny układ – działa na desktopie, tablecie i telefonie
 - ✅ Prosty, lekki kod, gotowy do dalszej rozbudowy
+- ✅ Dodanie fontu z Google Fonts
 
 ## Instalacja
 
@@ -69,6 +70,14 @@ Obecnie motyw posiada dwa warianty kolorystyczne
 - Dracula
 
 Wersję kolorystyczną motywu można przygotować przy pomocy [Dominium Generator style](https://maciej86.github.io/dominium-generator-style/). Jest to proste narzędzie, które tworzy plik CSS, gotowy do wrzucenia na serwer. Jego pełny opis działania znajdziesz tu [dominium-generator-style](https://github.com/Maciej86/dominium-generator-style). 
+
+---
+
+### Font motywu
+
+Font motywu, zmieniamy po przez wklejeni linku z **Google Fonts**. W motywie możemy zdefiniwać dwa fonty:
+- font dla całej strony
+- font dla wszystkich nagłówków od h1 do h6
 
 
 ## Ustawienia motywu strony głównej

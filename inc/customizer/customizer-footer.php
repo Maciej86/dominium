@@ -114,20 +114,19 @@ function dominium_custom_footer_support( $wp_customize ) {
   ));
 
   // Separator
-  $wp_customize->add_setting( 'separator_copyright', [
+  $wp_customize->add_setting( 'separator_1', [
     'sanitize_callback' => 'sanitize_text_field',
   ]);
-  
-  $wp_customize->add_control( new WP_Customize_Control(
-    $wp_customize,
-    'separator_copyright',
-    [
+
+  $wp_customize->add_control( 'separator_footer_1', [
       'section'     => 'footer_section',
-      'settings'    => 'separator_copyright',
-      'type'        => 'hidden',
+      'settings'    => 'separator_1',
+      'type'        => 'text',
+      'input_attrs' => [
+          'style' => 'display:none;',
+      ],
       'description' => '<hr style="margin:15px 0;border:0;border-top:1px solid #ccc;">',
-    ]
-  ));
+  ]);
 
   // Title copyright
   $wp_customize->add_setting( "title_copyright", array(
