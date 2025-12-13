@@ -331,7 +331,9 @@ Wszystkie zgłoszenia prowadzone są przez zakładkę **Issues** na GitHub.
 
 ### Zmiany w projekcie
 
-Wszystkie zmiany w projekcie są [publikowane tutaj](https://github.com/Maciej86/dominium/releases/tag/dominium).
+Wszystkie zmiany w projekcie są [publikowane tutaj](https://github.com/Maciej86/dominium/releases).
+
+Rozwój projektu można śledzić [tutaj](https://github.com/users/Maciej86/projects/2). Zachęcam również do [składania własnych pomysłów](https://github.com/Maciej86/dominium/issues/new?template=feature_request.yml) na rozwój motywu.
 
 ### Wymagania
 
