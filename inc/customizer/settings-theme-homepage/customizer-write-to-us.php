@@ -7,7 +7,7 @@ function dominium_custom_write_to_us_support( $wp_customize ) {
   // Add panel write to us
   $wp_customize->add_section( "write_to_us_section", array(
     "title"       => __( "Sekcja - Napisz od nas", "dominium" ),
-    "description" => __( "Ustawienia sekcji w ", "dominium" ),
+    "description" => __( "Ustawienia sekcji Napisz do nas ", "dominium" ),
     "panel"       => "homepage_panel",
     "priority"    => 50,
   ));

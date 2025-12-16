@@ -5,7 +5,7 @@ function dominium_custom_stepers_support( $wp_customize ) {
 
   $wp_customize->add_section( "steps_section", array(
     "title"       => __( "Sekcja - Kroki", "dominium" ),
-    "description" => __( "Ustawienia sekcji kroków na stronie głównej", "dominium" ),
+    "description" => __( "Ustawienia sekcji Kroki na stronie głównej", "dominium" ),
     "panel"       => "homepage_panel",
     "priority"    => 30,
   ));

@@ -5,7 +5,7 @@ function dominium_custom_count_support( $wp_customize ) {
 
   $wp_customize->add_section( "count_section", array(
     "title"       => __( "Sekcja - Odliczanie", "dominium" ),
-    "description" => __( "Ustawienia sekcji odliczania na stronie głównej", "dominium" ),
+    "description" => __( "Ustawienia sekcji Odliczanie na stronie głównej", "dominium" ),
     "panel"       => "homepage_panel",
     "priority"    => 40,
   ));

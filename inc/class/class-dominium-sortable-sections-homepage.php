@@ -23,7 +23,7 @@ class Dominium_sortable_sections_homepage extends WP_Customize_Control {
 	}
 
 	public function render_content() {
-			// Domyślne sekcje
+			// Defaults sections
 			$defaults = $this->defaults['sections_front_page'];
 
 			// Get save value
@@ -36,7 +36,7 @@ class Dominium_sortable_sections_homepage extends WP_Customize_Control {
 				}
 			}
 
-		// Scalanie domyślnych sekcji z zapisanymi danymi
+		// Merging default sections with saved data
 		$items = array_map(function($item) use ($saved_order) {
 			foreach ($saved_order as $saved_item) {
 				if ($saved_item['section'] === $item['section']) {

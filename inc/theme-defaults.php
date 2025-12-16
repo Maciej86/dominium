@@ -116,5 +116,6 @@ return [
 		2 => ['section' => 'products', 'name' => 'Produkty', 'visible' => true],
 		3 => ['section' => 'write_to_us', 'name' => 'Napisz do nas', 'visible' => true],
 		4 => ['section' => 'blog', 'name' => 'Blog', 'visible' => true],
+		5 => ['section' => 'home_page', 'name' => 'Strona', 'visible' => false],
 	],
 ];

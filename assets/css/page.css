@@ -100,6 +100,10 @@
   background-position: center;
 }
 
+.page_style img {
+  max-width: 100%;
+}
+
 .page_date {
   display: flex;
   align-items: center;

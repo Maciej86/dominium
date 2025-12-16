@@ -37,6 +37,7 @@ if (is_customize_preview() || is_admin()) {
     require get_template_directory() . '/inc/customizer/settings-theme-homepage/customizer-count.php';
     require get_template_directory() . '/inc/customizer/settings-theme-homepage/customizer-write-to-us.php';
     require get_template_directory() . '/inc/customizer/settings-theme-homepage/customizer-homepage-posts.php';
+    require get_template_directory() . '/inc/customizer/settings-theme-homepage/customizer-homepage-page.php';
 };
 
 // ========== WIDGET ==========

@@ -3,6 +3,14 @@
 function dominium_custom_header_support( $wp_customize ) {
   $defaults = require get_template_directory() . '/inc/theme-defaults.php';
 
+    // Add panel header
+    $wp_customize->add_section( "header_section", array(
+      "title"       => __( "Sekcja - Nagłówek", "dominium" ),
+      "description" => __( "Ustawienia Nagłówek na stronie głównej", "dominium" ),
+      "panel"       => "homepage_panel",
+      "priority"    => 20,
+    ));
+
   // Logo text
   $wp_customize->add_setting( 'header_logo_text', array(
     'default'           => $defaults['header']['logo'],
@@ -32,15 +40,6 @@ function dominium_custom_header_support( $wp_customize ) {
       'type'        => 'hidden',
       'description' => '<hr style="margin:15px 0;border:0;border-top:1px solid #ccc;">',
     ]
-  ));
-  
-
-  // Add panel header
-  $wp_customize->add_section( "header_section", array(
-    "title"       => __( "Sekcja - Nagłówek", "dominium" ),
-    "description" => __( "Ustawienia nagłówka na stronie głównej", "dominium" ),
-    "panel"       => "homepage_panel",
-    "priority"    => 20,
   ));
 
   // Title header

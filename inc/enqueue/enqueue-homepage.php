@@ -3,67 +3,114 @@
  * Dynamically enqueue homepage styles based on Customizer category selections
  */
 function dominium_enqueue_homepage() {
-     // ---------- Homepage-specific styles ----------
-     $homepage_styles = [
-        'dominium-header-content' => '/assets/css/parts/header-content.css',
-        'dominium-steps'          => '/assets/css/parts/steps.css',
-        'dominium-counts'         => '/assets/css/parts/counts.css',
-        'dominium-write-to-us'    => '/assets/css/parts/write-to-us.css',
-    ];
+	$defaults = require get_template_directory() . '/inc/theme-defaults.php';
+	$sections_defaults = $defaults['sections_front_page'];
 
-    foreach ( $homepage_styles as $handle => $file ) {
-        $path = get_stylesheet_directory() . $file;
-        if ( file_exists( $path ) ) {
-            wp_enqueue_style( $handle, get_stylesheet_directory_uri() . $file, [], filemtime( $path ), 'all' );
-        }
-    }
+	// We download the section visibility saved in the Customizer
+	$saved_value = get_theme_mod('sortable_custom_list', '');
+	$saved_order = [];
+	if (!empty($saved_value)) {
+			$decoded = json_decode($saved_value, true);
+			if (json_last_error() === JSON_ERROR_NONE && is_array($decoded)) {
+					$saved_order = $decoded;
+			}
+	}
 
-    // ---------- Categories assigned to homepage ----------
-    $category_settings = [
-        'products' => get_theme_mod( 'products_post_category', 0 ),
-        'blog'     => get_theme_mod( 'blog_post_category', 0 ),
-    ];
+	// We map the visibility of the section: if there is no value stored, we use the default
+	$sections_visibility = [];
+	foreach ($sections_defaults as $section) {
+			$sections_visibility[$section['section']] = $section['visible'];
+	}
+	if (!empty($saved_order)) {
+			foreach ($saved_order as $section) {
+					$sections_visibility[$section['section']] = $section['visible'];
+			}
+	}
 
-    $defaults = require get_template_directory() . '/inc/theme-defaults.php';
+	// ---------- Always loaded header ----------
+	$header_path = get_stylesheet_directory() . '/assets/css/parts/header-content.css';
+	if (file_exists($header_path)) {
+			wp_enqueue_style(
+					'dominium-header-content',
+					get_stylesheet_directory_uri() . '/assets/css/parts/header-content.css',
+					[],
+					filemtime($header_path),
+					'all'
+			);
+	}
 
-    foreach ( $category_settings as $section => $cat_id ) {
-        if ( ! $cat_id ) {
-            continue; // skip if no category selected
-        }
+	// ---------- Visibility-dependent sections ----------
+	$section_styles = [
+			'steps'      => '/assets/css/parts/steps.css',
+			'counts'     => '/assets/css/parts/counts.css',
+			'write_to_us'=> '/assets/css/parts/write-to-us.css',
+			'home_page'=> '/assets/css/parts/homepage-page',
+	];
 
-        // Get layout assigned to this category (fallback to default layout-grid)
-        $layout = get_theme_mod( "dominium_category_{$cat_id}_layout", 'layout-grid' );
-        $layout_slug = sanitize_key( $layout );
-        $css_file = "/assets/css/category/{$layout_slug}.css";
-        $css_path = get_stylesheet_directory() . $css_file;
+	foreach ($section_styles as $section => $file) {
+			if (!empty($sections_visibility[$section])) {
+					$path = get_stylesheet_directory() . $file;
+					if (file_exists($path)) {
+							wp_enqueue_style(
+									"dominium-{$section}",
+									get_stylesheet_directory_uri() . $file,
+									[],
+									filemtime($path),
+									'all'
+							);
+					}
+			}
+	}
 
-        // Fallback if CSS file doesn't exist
-        if ( ! file_exists( $css_path ) ) {
-            $layout_slug = 'layout-grid';
-            $css_file = "/assets/css/category/{$layout_slug}.css";
-            $css_path = get_stylesheet_directory() . $css_file;
-        }
+	// ---------- Categories (products and blog) ----------
+	$category_settings = [
+		'products' => get_theme_mod('products_post_category', 0),
+		'blog'     => get_theme_mod('blog_post_category', 0),
+	];
 
-        wp_enqueue_style(
-            "dominium-homepage-{$section}-{$layout_slug}",
-            get_stylesheet_directory_uri() . $css_file,
-            [],
-            filemtime( $css_path ),
-            'all'
-        );
-    }
+	$enqueued_files = []; // tablica ścieżek już wczytanych plików
 
-    // ---------- Homepage-only JS ----------
-    $js_file = '/assets/js/dominium-counter.js';
-    $js_path = get_template_directory() . $js_file;
-    if ( file_exists( $js_path ) ) {
-        wp_enqueue_script(
-            'dominium-counter',
-            get_template_directory_uri() . $js_file,
-            [],
-            '1.0',
-            true
-        );
-    }
-}
+	foreach ($category_settings as $section => $cat_id) {
+		// Skip if the category is not selected or the section is hidden
+		if (!$cat_id || empty($sections_visibility[$section]) || !$sections_visibility[$section]) {
+				continue;
+		}
+
+		// Layout assigned to category (fallback: layout-grid)
+		$layout = get_theme_mod("dominium_category_{$cat_id}_layout", 'layout-grid');
+		$layout_slug = sanitize_key($layout);
+		$css_file = "/assets/css/category/{$layout_slug}.css";
+		$css_path = get_stylesheet_directory() . $css_file;
+
+		if (!file_exists($css_path)) {
+				$layout_slug = 'layout-grid';
+				$css_file = "/assets/css/category/{$layout_slug}.css";
+				$css_path = get_stylesheet_directory() . $css_file;
+		}
+
+		// Skip enqueue if this file was already added
+		if (in_array($css_path, $enqueued_files)) {
+				continue;
+		}
+
+		wp_enqueue_style(
+				"dominium-homepage-{$section}-{$layout_slug}",
+				get_stylesheet_directory_uri() . $css_file,
+				[],
+				filemtime($css_path),
+				'all'
+		);
+
+		// Mark file as enqueued
+		$enqueued_files[] = $css_path;
+	}
+
+	// ---------- JS only on the homepage ----------
+	$js_file = '/assets/js/dominium-counter.js';
+	$js_path = get_template_directory() . $js_file;
+
+	if (file_exists($js_path) && !empty($sections_visibility['counts']) && $sections_visibility['counts']) {
+  	wp_enqueue_script('dominium-counter', get_template_directory_uri() . $js_file, [], '1.0', true);
+	}
+};
 dominium_enqueue_homepage();
