@@ -41,25 +41,19 @@ function dominium_enqueue_homepage() {
 
 	// ---------- Visibility-dependent sections ----------
 	$section_styles = [
-			'steps'      => '/assets/css/parts/steps.css',
-			'counts'     => '/assets/css/parts/counts.css',
-			'write_to_us'=> '/assets/css/parts/write-to-us.css',
-			'home_page'=> '/assets/css/parts/homepage-page',
+		'steps'      => '/assets/css/parts/steps.css',
+		'counts'     => '/assets/css/parts/counts.css',
+		'write_to_us'=> '/assets/css/parts/write-to-us.css',
+		'home_page'=> '/assets/css/parts/home-page.css',
 	];
 
 	foreach ($section_styles as $section => $file) {
-			if (!empty($sections_visibility[$section])) {
-					$path = get_stylesheet_directory() . $file;
-					if (file_exists($path)) {
-							wp_enqueue_style(
-									"dominium-{$section}",
-									get_stylesheet_directory_uri() . $file,
-									[],
-									filemtime($path),
-									'all'
-							);
-					}
+		if (!empty($sections_visibility[$section])) {
+			$path = get_stylesheet_directory() . $file;
+			if (file_exists($path)) {
+				wp_enqueue_style("dominium-{$section}",get_stylesheet_directory_uri() . $file,[],filemtime($path),'all');
 			}
+		}
 	}
 
 	// ---------- Categories (products and blog) ----------
@@ -83,23 +77,17 @@ function dominium_enqueue_homepage() {
 		$css_path = get_stylesheet_directory() . $css_file;
 
 		if (!file_exists($css_path)) {
-				$layout_slug = 'layout-grid';
-				$css_file = "/assets/css/category/{$layout_slug}.css";
-				$css_path = get_stylesheet_directory() . $css_file;
+			$layout_slug = 'layout-grid';
+			$css_file = "/assets/css/category/{$layout_slug}.css";
+			$css_path = get_stylesheet_directory() . $css_file;
 		}
 
 		// Skip enqueue if this file was already added
 		if (in_array($css_path, $enqueued_files)) {
-				continue;
+			continue;
 		}
 
-		wp_enqueue_style(
-				"dominium-homepage-{$section}-{$layout_slug}",
-				get_stylesheet_directory_uri() . $css_file,
-				[],
-				filemtime($css_path),
-				'all'
-		);
+		wp_enqueue_style("dominium-homepage-{$section}-{$layout_slug}",get_stylesheet_directory_uri() . $css_file,[],filemtime($css_path),'all');
 
 		// Mark file as enqueued
 		$enqueued_files[] = $css_path;
