@@ -94,7 +94,6 @@ return [
 	'home_page' => [
 		'border' => 'top',
 		'background-color' => 'inherit',
-		'orientation' => 'horizontall',
 	],
 	'category_layouts' => [
 		'layout-card' => 'Karty pełne',

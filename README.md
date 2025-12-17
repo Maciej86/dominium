@@ -16,6 +16,7 @@ Motyw został zaprojektowany tak, abyś mógł szybko stworzyć nowoczesną stro
   - [Sekcja Odliczanie](#sekcja-odliczanie)
   - [Sekcja Napisz do nas](#sekcja-napisz-do-nas)
   - [Sekcja Produkty, Blok](#sekcja-produkty-blok)
+  - [Sekcja Strona](#sekcja-strona)
 - [Ustawienia kategorii](#ustawienia-kategorii)
 - [Ustawienia styli wpisów](#ustawienia-styli-wpisów)
 - [Ustawienia belki nad stroną](#ustawienia-belki-nad-stroną)
@@ -206,6 +207,24 @@ Obie sekcje na stronie głównej wyświetlają wpisy z wybranych kategorii. W pr
 - tytuł kategorii
 - opis kategorii
 - w przypadku ustawień dla **Blog** domyślny tytuł kategorii na stronie głównej to **Ostatnie wpisy na blogu**
+
+---
+
+### Sekcja Strona
+
+    🛠️ Wygląd => Dostosuj => Ustawienia motywu strony głównej => Sekcja - Strona
+
+Sekcja wyświetla dowolną stronę, w takiej formie jak zostanie zbudowana w edytorze WordPress.
+
+**Personalizacja**
+
+- wybór strony
+- obramowanie sekcji
+- kolor sekcji
+
+**Wyświetlana zawartość:**
+
+Zgodnie z edytorem WordPress.
 
 ## Ustawienia kategorii
 
