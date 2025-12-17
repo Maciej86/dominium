@@ -1,7 +1,7 @@
 name: "Propozycja nowej funkcji"
 description: "Zaproponuj nową funkcję lub ulepszenie"
 title: "[Funkcja]: "
-labels: ["enhancement"]
+labels: ["feature"]
 body:
   - type: textarea
     id: description
