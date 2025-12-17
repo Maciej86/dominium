@@ -1,27 +1,24 @@
 <?php
-$page_id = get_theme_mod( 'page_content' );
+$defaults = require get_template_directory() . '/inc/theme-defaults.php';
+
+$page_id = get_theme_mod('page_content');
+$border = get_theme_mod('page_border', $defaults['home_page']['border']);
+$background_color = get_theme_mod('page_background_color', $defaults['home_page']['background-color']);
 
 if ( $page_id ) :
     $page = get_post( $page_id );
     if ( $page ) :
-      $title   = get_the_title( $page );
       $content = apply_filters( 'the_content', $page->post_content );
-      $date    = get_the_date( '', $page );
-      $thumbnail = get_the_post_thumbnail_url( $page, 'large' );
+      $slug = sanitize_title( $title );
     ?>
-    <section class="home_page scroll_margin">
-      <div class="container">
-        <div class="page_style">
-          <?php if ( $thumbnail ) : ?>
-            <div class="page_image">
-              <img src="<?php echo esc_url( $thumbnail ); ?>" alt="<?php echo esc_attr( $title ); ?>">
-            </div>
-          <?php endif; ?>
 
-          <h2><?php echo esc_html( $title ); ?></h2>
-          <p class="page_date"><?php echo esc_html( $date ); ?></p>
-          <?php echo $content; ?>
-        </div>
+    <section 
+      id="<?php echo esc_attr( $slug ); ?>" 
+      class="home_page border-<?php echo $border ?> scroll_margin"
+      style="background-color: <?php echo $background_color ?>"
+    >
+      <div class="container page_style">
+        <?php echo $content; ?>
       </div>
     </section>
     <?php

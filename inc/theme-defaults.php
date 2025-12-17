@@ -91,6 +91,11 @@ return [
 		'image' => 'bg_send_email.jpg',
 		'button-text' => 'Napisz do nas',
 	],
+	'home_page' => [
+		'border' => 'top',
+		'background-color' => 'inherit',
+		'orientation' => 'horizontall',
+	],
 	'category_layouts' => [
 		'layout-card' => 'Karty pełne',
 		'layout-grid' => 'Siatka',

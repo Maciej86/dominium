@@ -15,7 +15,7 @@ $image = get_theme_mod('write_to_us_image', $default_image);
       <div class="write_to_us__conteiner">
         <div class="write_to_us__conteiner__left">
           <h2 class="write_to_us__conteiner__left__title"><?php echo esc_html($title); ?></h2>
-          <div class="page_style"><?php echo esc_html($description); ?></div>
+          <div class="page_style"><p><?php echo esc_html($description); ?></p></div>
         </div>
         <div class="write_to_us__conteiner__right">
           <a href="<?php echo esc_url($contact_page_url); ?>" class="write_to_us__conteiner__right__link"><?php echo esc_html($button_text); ?></a>

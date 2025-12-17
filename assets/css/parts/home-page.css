@@ -1,0 +1,17 @@
+.home_page {
+  background-color: inherit;
+  padding: 30px 0;
+}
+
+.border-top {
+  border-top: 1px solid rgb(209, 209, 209);
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+.border-top-bottom {
+  border-top: 1px solid rgb(209, 209, 209);
+  border-bottom: 1px solid rgb(209, 209, 209);
+}
