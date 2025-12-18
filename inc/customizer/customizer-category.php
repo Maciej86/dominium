@@ -65,9 +65,10 @@ function dominium_custom_category( $wp_customize ) {
 			'sanitize_callback' => 'sanitize_text_field',
     ));
     $wp_customize->add_control( $readmore_setting_id, array(
-			'label'    => __( 'Tekst przy skrócie wpisu (np. "Czytaj więcej")', 'dominium' ),
+			'label'    => __( 'Tekst przy skrócie wpisu', 'dominium' ),
 			'section'  => $section_id,
 			'type'     => 'text',
+      'description' => __('Jest to tekst dla przycisku przenoszący do pełnego wpisu (np. "Czytaj więcej")"', 'dominium' )
     ));
 
     // See all
@@ -77,9 +78,10 @@ function dominium_custom_category( $wp_customize ) {
 			'sanitize_callback' => 'sanitize_text_field',
     ));
     $wp_customize->add_control( $seeall_setting_id, array(
-			'label'    => __( 'Tekst linku do wszystkich wpisów (np. "Zobacz wszystkie")', 'dominium' ),
+			'label'    => __( 'Tekst linku do wszystkich wpisów', 'dominium' ),
 			'section'  => $section_id,
 			'type'     => 'text',
+      'description' => __('Jest to tekst dla przycisku przenoszący do wszystkich wpisów (np. "Zobacz wszystkie")"', 'dominium' )
     ));
 
     // Empty category
@@ -89,9 +91,10 @@ function dominium_custom_category( $wp_customize ) {
 			'sanitize_callback' => 'sanitize_text_field',
     ));
     $wp_customize->add_control( $empty_setting_id, array(
-			'label'    => __( 'Tekst przy pustej kategorii (np. "Brak wpisów")', 'dominium' ),
+			'label'    => __( 'Tekst przy pustej kategorii', 'dominium' ),
 			'section'  => $section_id,
 			'type'     => 'text',
+      'description' => __('Tekst ten jest wyświetlany w przypadku, kiedy żaden wpis nie jest przypisany da kategori (np. "Brak wpisów")', 'dominium' )
     ));
   }
 }

@@ -56,7 +56,7 @@ function dominium_custom_homepage_posts_support( $wp_customize ) {
   ]);
 
   $wp_customize->add_control('products_home_posts_count_control', [
-    'label'       => __('Liczba produktów do wyświetlenia na stronie głównej', 'dominium'),
+    'label'       => __('Liczba wpisów na stronie głównej', 'dominium'),
     'section'     => 'homepage_posts',
     'settings'    => 'products_home_posts_count',
     'type'        => 'number',
@@ -118,7 +118,7 @@ function dominium_custom_homepage_posts_support( $wp_customize ) {
   ]);
 
   $wp_customize->add_control('blog_home_posts_count_control', [
-    'label'       => __('Liczba artykułów do wyświetlenia na stronie głównej', 'dominium'),
+    'label'       => __('Liczba wpisów na stronie głównej', 'dominium'),
     'section'     => 'homepage_posts',
     'settings'    => 'blog_home_posts_count',
     'type'        => 'number',

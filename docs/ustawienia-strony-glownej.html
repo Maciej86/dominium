@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dokumentacja Motywu</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="assets/index.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>Dokumentacja Motywu</h1>
+  <p>Nowoczesny motyw WordPress z rozbudowanym panelem Customizera.</p>
+</header>
+
+<button class="mobile-toc-toggle" aria-label="Otwórz spis treści">
+  ☰ Spis treści
+</button>
+
+<main>
+  <nav class="sidebar toc">
+    <h3>Spis treści</h3>
+    <ul>
+      <li><a href="index.html">Na start</a></li>
+      <li><a href="instalacja.html">Instalacja</a></li>
+      <li><a href="konfiguracja-nawigacji.html">Konfiguracja nawigacji</a></li>
+      <li><a href="ustawienia-glowne-motywu.html">Ustawienia główne motywu</a></li>
+      <li><a href="ustawienia-strony-glownej.html" class="active">Ustawienia strony głównej</a></li>
+      <li><a href="ustawienia-kategorii.html">Ustawienia kategorii</a></li>
+      <li><a href="ustawienia-styli-wpisow.html">Ustawienia styli wpisów</a></li>
+      <li><a href="ustawienia-belki-nad-nawigacja.html">Ustawienia belki nad nawigacją</a></li>
+      <li><a href="ustawienia-stopki.html">Ustawienia stopki</a></li>
+      <li><a href="ustawienia-cookie.html">Ustawienia ciasteczek (cookie)</a></li>
+      <li><a href="ustawienia-strony-kontaktowej.html">Ustawienia strony kontaktowej</a></li>
+      <li><a href="widzety-motywu.html">Widżety motywu</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <h1 id="na-start">Ustawienia strony głównej</h1>
+    <p><pre><code>🛠️ Wygląd => Dostosuj => Ustawienia motywu strony głównej</code></pre></p>
+
+    <section>
+      <h2>Sekcje strony głównej</h2>
+      <p class="note">💡 Strona główna składa się z kilku sekcji, które możesz <strong>włączać, wyłączać</strong> i <strong>zmieniać kolejność</strong>.</p>
+      <p>Obecnie strona główna składa się z następujących sekcji:</p>
+      <ul>
+        <li><strong>Nagłówek</strong> - jest to część ze zdjęciem w tle</li>
+        <li><strong>Kroki</strong> - jest to sekcja z trzema boksami, która każda zawiera tytuł oraz treść</li>
+        <li><strong>Odliczanie</strong> - jest to sekcja, gdzie jest animacja odliczania zdeklarowanych wartości wraz z podpisem</li>
+        <li><strong>Wpisy z kategorii (Produkty)</strong>- jest to pierwsza tego typu sekcja, w której można wyświetlić wpisy z wybranej kategorii</li>
+        <li><strong>Napisz do nas</strong> - jest to wąska sekcja ze zdjęciem oraz przyciskiem kierującym do dowolnej podstrony</li>
+        <li><strong>Wpisy z kategorii (Blog)</strong> - jest to druga sekcja tego typu, gdzie można wyświetlić wpisy z wybranej kategorii</li>
+        <li><strong>Strona</strong> - jest to sekcja, w której można wyświetlić dowolną stronę - <strong>domyślnie wyłączona</strong></li>
+      </ul>
+      <p>Nawigacja oraz stopka nie podlegają opcji wyłączenia czy zmiany kolejności.</p>
+    </section>
+    
+    <section>
+      <h2>Ustawienia sekcji</h2>
+      <p><pre><code>🛠️ Wygląd => Dostosuj => Ustawienia motywu strony głównej => Ustawienia sekcji</code></pre></p>
+
+      <p>W tym miejscu można wyłączyć lub włączyć poszczególne sekcje strony głównej, jak również zmienić ich kolejność na stronie głównej. Kolejność sekcji na stronie głównej dokonujemy poprzez przeciągnięcie elementu na liście.</p>
+    </section>
+
+    <section>
+      <h2>Sekcja Nagłówek</h2>
+      <p><pre><code>🛠️ Wygląd => Dostosuj => Ustawienia motywu strony głównej => Sekcja - Nagłówek</code></pre></p>
+      <p>Sekcja to wyświetla treści znajdujące na samej górze strony na zdjęciu.
+        W sekcji znajdują się dwa przyciski. Jeżeli nie podamy linka prowadzącego do innej strony lub do części strony głównej, poprzez kotwicę wówczas przyciski nie będą wyświetlane.</p>
+
+        <p><strong>Personalizacja</strong></p>
+        <ul>
+          <li><strong>Tekst zamiast logo</strong> - Wpisz tekst, jeśli nie chcesz używać obrazka logo. Jeżeli został ustawiony obrazek na logo tekst nie zostanie wyświetlony. Tekst na stronie zawsze jest wyświetlany małymi literami. Logo obrazka ustawisz w <code class="inline">Wygląd => Dostosuj => Tożsamość witryny</code></li>
+          <li><strong>Treść nagłówka</strong> - jest wyświetlany jako pierwszy element i zazwyczaj największą fontem, choć zależy to od rodzaju stylu motywu.</li>
+          <li><strong>Treść pod nagłówkiem</strong> - jest to kolejny element znajdujący się bezpośredni pod treścią nagłówka.</li>
+          <li><strong>Opis pod nagłówkiem</strong> - dowolna treść stanowiąca uzupełnienie części nagłówkowej strony</li>
+          <li><strong>Tekst przycisku 1 / Tekst przycisku 2</strong> - Treść przycisku. Brak podania treści spowoduje ukrycie przycisku.</li>
+          <li><strong>Adres URL przycisku 1 / Adres URL przycisku 2</strong> - Jeżeli przycisk ma przewijać stronę główną do wpisów z kategorii w polu wpisz nazwę uproszczoną kategorii z znakiem <code class="inline">#</code> na przykład <code class="inline">#konstrukcje</code>. Nazwę uproszczoną kategorii znajdziemy w panelu administratora WordPress w miejscu gdzie tworzymy kategorie. Jeżeli przycisk ma odnosić się do konkretnej strony, należy podać jego pełny adres wraz z https. Brak podania adresu spowoduje ukrycie przycisku.</li>
+          <li><strong>Obrazek tła nagłówka</strong> - Zdjęcie nagłówka powinno mieć rozmiar nie mniejszy niż 1920x1080px. Jeżeli obrazek jest za mały, zostanie powiększony, co może doprowadzić do utraty jego jakości. Przyciemnienie do zdjęcia zostanie wykonane automatycznie. Obrazek dodajemy z biblioteki mediów.</li>
+        </ul>
+    </section>
+
+    <section>
+      <h2>Sekcja Kroki</h2>
+      <p><pre><code>🛠️ Wygląd => Dostosuj => Ustawienia motywu strony głównej => Sekcja - Kroki</code></pre></p>
+      <p>Sekcja wyświetlająca treść w trzech boksach.</p>
+
+        <p><strong>Personalizacja</strong></p>
+        <ul>
+          <li><strong>Tytuł kroku 1 / Tytuł kroku 2 / Tytuł kroku 1</strong> - tytuł dla każdego z boksów</li>
+          <li><strong>Treść kroku 1 / Treść kroku 2 / Treść kroku 3</strong> - treść dla każdego z boksów</li>
+        </ul>
+
+        <p class="note">💡 Postaraj się do każego boksu, przypisać taką samą długość tekstu. Zabieg ten sprawia lepsze wrażenie estetyczne.</p>
+    </section>
+
+    <section>
+      <h2>Sekcja Odliczanie</h2>
+      <p><pre><code>🛠️ Wygląd => Dostosuj => Ustawienia motywu strony głównej => Sekcja - Odliczanie</code></pre></p>
+      <p>Sekcja wyświetlająca cztery boksy z odliczaniem. Każda z wartości jest odliczana od zero do wartości wskazanej w ustawieniach motywu.</p>
+
+        <p><strong>Personalizacja</strong></p>
+        <ul>
+          <li><strong>Tytuł odliczania 1 / Tytuł odliczania 2 / Tytuł odliczania 3 / Tytuł odliczania 4</strong> - tytuł odliczania</li>
+          <li><strong>Wartość odliczania 1 / Wartość odliczania 2 / Wartość odliczania 3 / Wartość odliczania 4</strong> - wartość do której ma odbywać się odliczanie. Wartość początkowa to zawsze jest zero.</li>
+        </ul>
+
+        <p class="note">💡 Niezależnie od wartości odliczania, każde odliczanie przebiega dokładnie w tym samym czasie. To znaczy od 0 do 20 oraz od 0 do 170, odliczanie będzie trwało tyle samo.</p>
+    </section>
+
+    <section>
+      <h2>Sekcja Napisz do nas</h2>
+      <p><pre><code>🛠️ Wygląd => Dostosuj => Ustawienia motywu strony głównej => Sekcja - Napisz do nas</code></pre></p>
+      <p>Sekcja wyświetlająca nagłówek tekst oraz przycisk, prowadzący do dowolnej strony, na przykład strony kontaktowej. Dzięki konfiguracji sekcja ta może zostać wykorzystana również do promocji wydarzenia.</p>
+
+        <p><strong>Personalizacja</strong></p>
+        <ul>
+          <li><strong>Nagłówek</strong> - Nagłówek sekcji</li>
+          <li><strong>Opis pod nagłówkiem</strong> - Opis wyświetlany pod nagłówkiem</li>
+          <li><strong>Treść przycisku</strong> - treść dla przycisku</li>
+          <li><strong>Strona docelowa przycisku</strong> - Z listy należy wybrać do jakiej strony (page) ma zostać przeniesiony użytkownik.</li>
+          <li><strong>Tło sekcji (obrazek)</strong> - Wybór obrazka do sekcji z biblioteki mediów. Przyciemnienie będzie dodane automatycznie</li>
+        </ul>
+
+        <p class="note">💡 Sekcję tą najlepiej wykorzystać do przeniesienia użytkownika do strony kontaktu lub specjalnego wydarzenia.</p>
+    </section>
+
+    <section>
+      <h2>Sekcja Produkty, Blok</h2>
+      <p><pre><code>🛠️ Wygląd => Dostosuj => Ustawienia motywu strony głównej => Sekcja - Produkty, Blog</code></pre></p>
+      <p>Obie sekcje na stronie głównej wyświetlają wpisy z wybranych kategorii. W przypadku sekcji Blog, można podać alternatywny nagłówek dla tej sekcji. Jeżeli przy tworzeniu kategorii został podany opis, zostanie on wyświetlony na stronie głównej.</p>
+
+        <p><strong>Personalizacja</strong></p>
+        <ul>
+          <li><strong>Wybierz kategorię Produktów / Wybierz kategorię Bloga</strong> - Nazwa "Produkty" oraz "Blog" to nazwa umowna. Można w niej wyświetlić wpisy z dowolnej kategorii. Wpisy zostaną wyświetlone w stylu, który został ustawiony dla danej kategorii.</li>
+          <li><strong>Liczba wpisów na stronie głównej</strong> - Liczba wpisów do wyświetlenia. Warto wybrać taką liczbę wpisów, która będzie wyglądała dobrze na stronie głównej. Jeżęli kategori korzysta z układu "Siatka", to warto ustawić 3 wpisy lub jej wielokrotność. Podanie wartości zero spowoduje wyświetlenie wszystkich wpisów.</li>
+          <li><strong>Tytuł sekcji bloga na strone głównej</strong> - W przypadku wpisów dotyczących "Blog", można podać alternatywny nagłówke zamiast nazwy kategorii, na przykład "Ostatnie wpisy na blogu".</li>
+        </ul>
+    </section>
+
+    <section>
+      <h2>Sekcja Strona (domyślnie wyłączona)</h2>
+      <p><pre><code>🛠️ Wygląd => Dostosuj => Ustawienia motywu strony głównej => Sekcja - Strona</code></pre></p>
+      <p>Sekcja wyświetla dowolną stronę (page), w takiej formie jak zostanie zbudowana w edytorze WordPress. Sekcja ta nie wyświetla obrazka wyróżniającego ani daty.  Sekcja ta jest domyślnie wyłączona. należy ją włączyć w:</p>
+      <p><pre><code>Wygląd => Dostosuj => Ustawienia motywu strony głównej => Ustawienia sekcji</code></pre></p>
+
+        <p><strong>Personalizacja</strong></p>
+        <ul>
+          <li><strong>Strona do wyświetlenia</strong> - wybór strony jaka ma zostać wyświetlona</li>
+          <li><strong>Obramowanie</strong> - do sekcji można dodać obramowanie. Kolor obramowania będzie zależał od stylu motywu.</li>
+          <li><strong>Kolor tła</strong> - Można ustawić dowolny kolor tła skecji. W przypadku braku wyświetlenia zostanie wyświetlony kolor domyślny zgodnie z wybranym stylem motywu.</li>
+        </ul>
+
+      <p class="note">💡 Stronę, którą chcemy wyświetlić, warto utworzyć przy pomocy kolumn w edytorze WordPress, gdzie na przykład z lewej strony wyświetlimy nagłówek a w prawej stronie treść.</p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Dominium. Wszelkie prawa zastrzeżone.</p>
+</footer>
+
+</body>
+</html>

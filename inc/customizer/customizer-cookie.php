@@ -171,7 +171,7 @@ function dominium_custom_cookie_support( $wp_customize ) {
       'full'  => __( 'Pełna szerokość', 'dominium' ),
       'modal' => __( 'Okienko modalne', 'dominium' ),
     ),
-    'description' => __( '"Okienko modalne" przy mniejszej rozdzielczości, na przykłąd na telefonie, będzie wyświetlane na całą szerokość.', 'dominium' ),
+    'description' => __( '"Okienko modalne" przy mniejszej rozdzielczości, na przykład na telefonie, będzie wyświetlane na całą szerokość.', 'dominium' ),
   ));
 
   // Display side (left / right)

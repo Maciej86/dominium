@@ -20,7 +20,7 @@ function dominium_custom_write_to_us_support( $wp_customize ) {
 
   // Add contrl title customizer
   $wp_customize->add_control( "write_to_us_title_control", array(
-    "label"    => __( "Tytuł", "dominium" ),
+    "label"    => __( "Nagłówek", "dominium" ),
     "section"  => "write_to_us_section",
     "settings" => "write_to_us_title",
     "type"     => "text",

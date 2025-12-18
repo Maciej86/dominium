@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dokumentacja Motywu</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="assets/index.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>Dokumentacja Motywu</h1>
+  <p>Nowoczesny motyw WordPress z rozbudowanym panelem Customizera.</p>
+</header>
+
+<button class="mobile-toc-toggle" aria-label="Otwórz spis treści">
+  ☰ Spis treści
+</button>
+
+<main>
+  <nav class="sidebar toc">
+    <h3>Spis treści</h3>
+    <ul>
+      <li><a href="index.html">Na start</a></li>
+      <li><a href="instalacja.html">Instalacja</a></li>
+      <li><a href="konfiguracja-nawigacji.html">Konfiguracja nawigacji</a></li>
+      <li><a href="ustawienia-glowne-motywu.html">Ustawienia główne motywu</a></li>
+      <li><a href="ustawienia-strony-glownej.html">Ustawienia strony głównej</a></li>
+      <li><a href="ustawienia-kategorii.html">Ustawienia kategorii</a></li>
+      <li><a href="ustawienia-styli-wpisow.html">Ustawienia styli wpisów</a></li>
+      <li><a href="ustawienia-belki-nad-nawigacja.html">Ustawienia belki nad nawigacją</a></li>
+      <li><a href="ustawienia-stopki.html">Ustawienia stopki</a></li>
+      <li><a href="ustawienia-cookie.html">Ustawienia ciasteczek (cookie)</a></li>
+      <li><a href="ustawienia-strony-kontaktowej.html" class="active">Ustawienia strony kontaktowej</a></li>
+      <li><a href="widzety-motywu.html">Widżety motywu</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <h1 id="na-start">Ustawienia strony kontaktowej</h1>
+    <p><pre><code>🛠️ Wygląd => Dostosuj => Ustawienia strony kontaktowej</code></pre></p>
+
+    <section>
+      <h2>Edycja wpisów typu "Siatka"</h2>
+
+      <p>Obecnie istnieje tylko jeden szablon strony kontaktowej. Z lewej strony dane kontaktowe, z prawej strony formularz. Niżej mapa z Google Maps, na całą szerokość strony.</p>
+
+      <p>Motyw domyślnie wspiera formularz kontaktowy tworzony przy pomocy <a href="https://wordpress.org/plugins/contact-form-7">Contact Form 7</a>.</p>
+
+      <p><strong>Konfiguracja</strong></p>
+      <ol>
+        <li>Utwórz stronę, która będzie stroną kontaktową. W ustawieniach tej strony wybierz <code class="inline">Szablon</code> a z rozwijanej listy wybierz <code class="inline">Kontakt - podstawowy</code>. Następnie opóblikuj stronę.</li>
+        <li>Utwórz stronę z danymi kontaktowymi w dowolnej formie.</li>
+        <li>Przejdź do <code class="inline">Wygląd => Dostosuj => Ustawienia strony kontaktowej</code>. W <strong>Strona z danymi kontaktowymi</strong> wybierz stronę, w której znajdują się dane kontaktowe z punktu 2. W <strong>Shortcode formularza kontaktowego</strong> wpisz shortcode z Contact Form 7 twojego formularza kontaktowego. W <strong>Mapa Google (pełny kod iframe)</strong> podaj pełny kod iframe dla mapy Google.</li>
+      </ol>
+
+      <p><strong>Personalizacja</strong></p>
+      <ul>
+        <li><strong>Strona z danymi kontaktowymi</strong> - Strona któa zawiera dane kontaktowe, adres, numery telefonów oraz adresy e-mail.</li>
+        <li><strong>Shortcode formularza kontaktowego</strong> - Shortcode formularza kontaktowego z Contact Form 7</li>
+        <li><strong>Mapa Google (pełny kod iframe)</strong> - Należy podać cały kod iframe z Google Maps</li>
+      </ul>
+    </section>
+  
+
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Dominium. Wszelkie prawa zastrzeżone.</p>
+</footer>
+
+</body>
+</html>

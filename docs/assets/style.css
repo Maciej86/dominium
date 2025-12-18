@@ -1,0 +1,174 @@
+/* =========================
+  Base / Dark mode
+========================= */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+a {
+  color: #4fc3f7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+    Header
+========================= */
+header {
+  background: #1e1e1e;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* =========================
+    Mobile TOC button
+========================= */
+.mobile-toc-toggle {
+  display: none;
+  width: 100%;
+  padding: 1rem;
+  background: #1e1e1e;
+  color: #4fc3f7;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: left;
+}
+
+/* =========================
+    Layout
+========================= */
+main {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.content {
+  flex: 1;
+}
+
+/* =========================
+    Sidebar
+========================= */
+.sidebar {
+  width: 260px;
+  background: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 8px;
+  position: sticky;
+  top: 2rem;
+  height: fit-content;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar .active {
+  padding: 6px 16px;
+  background-color: #4fc3f7;
+  color: #1e1e1e;
+  border-radius: 8px;
+}
+
+/* =========================
+    Sections
+========================= */
+section {
+  background: #1e1e1e;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+/* =========================
+    Code blocks
+========================= */
+pre {
+  background: #2c2c2c;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  color: #c5e4fd;
+}
+
+.inline {
+  background: #2c2c2c;
+  padding: 4px 8px;
+  color: #c5e4fd;
+  border-radius: 4px;
+}
+
+.note {
+  background: #2c2c2c;
+  padding: 12px;
+  color: #c5e4fd;
+  border-radius: 6px;
+}
+/* =========================
+    Footer
+========================= */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1e1e1e;
+  color: #aaa;
+}
+
+/* =========================
+    Mobile
+========================= */
+@media (max-width: 900px) {
+
+  main {
+    flex-direction: column;
+  }
+
+  .mobile-toc-toggle {
+    display: block;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 80%;
+    max-width: 320px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+    border-radius: 0;
+    padding-top: 4rem;
+    box-shadow: 0 0 10px #000000;;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+}
