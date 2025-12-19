@@ -54,9 +54,9 @@
   --title-section-font-weight: 400;
   --title-section-text-align: center;
   /* = HEADER = */
-  --header-height: 800px;
   --header-mobile-height: 680px;
   --header-mobile-padding-top: 80px;
+  --header-mobile-padding-bottom: 80px;
   --header-box-shadow: 0 0 5px var(--black);
   /* = HEADER CONTACT = */
   --header-contact-bg: var(--primary-dark-strong);

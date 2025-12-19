@@ -1,15 +1,24 @@
 <?php
   $defaults = require get_template_directory() . "/inc/theme-defaults.php";
 
+  $header_height = get_theme_mod("header_height", $defaults["header"]["height"]);
+  $header_margin_top = get_theme_mod("header_margin_top", $defaults["header"]["margin_top"]);
   $header_title = get_theme_mod("header_title", $defaults["header"]["title"]);
   $header_subtitle = get_theme_mod("header_subtitle", $defaults["header"]["subtitle"]);
   $header_description = get_theme_mod("header_description", $defaults["header"]["description"]);
   $header_background_image = get_theme_mod("header_background_image", $defaults["header"]["background_image"]);
 ?>
 
-<header class="header js-image-background" data-image="<?php echo esc_url( $header_background_image ); ?>">
+<header 
+  class="header js-image-background" 
+  data-image="<?php echo esc_url( $header_background_image ); ?>"
+  style="--header-height: <?php echo esc_html( $header_height ); ?>px;"
+>
   <div class="container">
-    <div class="header__content">
+    <div 
+      class="header__content" 
+      style="--header-margin-top: <?php echo esc_html( $header_margin_top ); ?>px;"
+    >
       <h1 class="header__content__title"><?php echo esc_html( $header_title ); ?></h1>
 
       <?php if ( !empty( $header_subtitle ) ) : ?>

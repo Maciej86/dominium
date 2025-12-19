@@ -14,6 +14,8 @@ return [
 		'x' => 'https://x.com/?lang=pl'
 	],
 	'header' => [
+		'height'			=> 800,
+		'margin_top'	=> 0,
 		'title'       => '20 lat doświadczenia',
 		'subtitle'    => 'W projektowaniu ze stali konstrukcyjnej',
 		'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti impedit voluptas, nam maiores alias aliquid.',

@@ -42,6 +42,51 @@ function dominium_custom_header_support( $wp_customize ) {
     ]
   ));
 
+  // Header height
+  $wp_customize->add_setting( "header_height", array(
+    "default"           => $defaults['header']['height'],
+    "sanitize_callback" => "absint",
+    "transport"         => "refresh",
+  ));
+
+  $wp_customize->add_control( "header_height", array(
+    "label"    => __( 'Wysokość nagłówka', 'dominium' ),
+    "section"  => "header_section",
+    "settings" => 'header_height',
+    "type"     => "number",
+    'description' => 'Ustaw wysokość nagłówa w pikselach.',
+  ));
+
+  // Margin top
+  $wp_customize->add_setting( "header_margin_top", array(
+    "default"           => $defaults['header']['margin_top'],
+    "sanitize_callback" => "absint",
+    "transport"         => "refresh",
+  ));
+
+  $wp_customize->add_control( "header_margin_top", array(
+    "label"    => __( 'Górny margines', 'dominium' ),
+    "section"  => "header_section",
+    "settings" => 'header_margin_top',
+    "type"     => "number",
+    'description' => 'Dodaj górny margines dla treści.',
+  ));
+
+  $wp_customize->add_setting( 'separator_height', [
+    'sanitize_callback' => 'sanitize_text_field',
+  ]);
+  
+  $wp_customize->add_control( new WP_Customize_Control(
+    $wp_customize,
+    'separator_height',
+    [
+      'section'     => 'header_section',
+      'settings'    => 'separator_height',
+      'type'        => 'hidden',
+      'description' => '<hr style="margin:15px 0;border:0;border-top:1px solid #ccc;">',
+    ]
+  ));
+
   // Title header
   $wp_customize->add_setting( "header_title", array(
     "default"           => $defaults['header']['title'],

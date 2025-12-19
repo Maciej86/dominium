@@ -28,8 +28,9 @@
 
 @media (max-width: 800px) {
   .header {
-    height: var(--header-mobile-height);
+    height: auto;
     padding-top: var(--header-mobile-padding-top);
+    padding-bottom: var(--header-mobile-padding-bottom);
   }
 }
 
