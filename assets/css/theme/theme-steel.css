@@ -209,6 +209,9 @@
   --wtu-button-hover-color: inherit;
   --wtu-button-hover-text-decoration: none;
 
+  /* = PAGE IN HOMEPAGE = */
+  --border-front-page: 1px solid var(--light);
+
   /* = COOKIE = */
   --cookie-bg: var(--white);
   --cookie-color: inherit;

@@ -208,6 +208,8 @@
   --cookie-placeholder-border: 1px solid var(--secondary);
   --cookie-placeholder-border-radius: 8px;
   --cookie-placeholder-box-shadow: 0 0 8px var(--light);
+    /* = PAGE IN HOMEPAGE = */
+    --border-front-page: 1px solid var(--secondary-dark);
   /* = ASIDE = */
   --asside-margin: 0px;
   --asside-padding: 0px;

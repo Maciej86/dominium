@@ -4,14 +4,14 @@
 }
 
 .border-top {
-  border-top: 1px solid rgb(209, 209, 209);
+  border-top: var(--border-front-page);
 }
 
 .border-bottom {
-  border-bottom: 1px solid rgb(209, 209, 209);
+  border-bottom: var(--border-front-page);
 }
 
 .border-top-bottom {
-  border-top: 1px solid rgb(209, 209, 209);
-  border-bottom: 1px solid rgb(209, 209, 209);
+  border-top: var(--border-front-page);
+  border-bottom: var(--border-front-page);
 }
