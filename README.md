@@ -10,15 +10,11 @@ Zaprojektowany z myślą o szybkim tworzeniu stron firmowych **bez konieczności
 
 ## 📸 Podgląd motywu
 
-> ⬇️ Wstaw tutaj screen głównej strony (hero / strona główna)
-
 <!-- SCREENSHOT: strona główna -->
-![Dominium – Strona główna](docs/images/homepage.png)
+![Dominium – Strona główna](docs/images/dominium.png)
 
-> ⬇️ Wstaw tutaj screen z Customizera
-
-<!-- SCREENSHOT: customizer -->
-![Dominium – Customizer](docs/images/customizer.png)
+## 🛠️ Customizer
+![Dominium – Customizer](docs/images/dominium-customizer.png)
 
 ---
 
