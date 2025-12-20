@@ -31,7 +31,7 @@
         </li>
       <?php endif; ?>
       </ul>
-      <div class="header_contact__contact__social">
+      <div class="header_contact__contact__social" style="padding-top: <?php if ( empty( $up_menu_email ) &&  empty( $up_menu_phone )) : ?> 15px;<?php endif; ?>">
 
         <?php if ( !empty( $up_menu_facebook ) ) : ?>
           <a href="<?php echo esc_url( $up_menu_facebook ); ?>">
