@@ -102,6 +102,11 @@ section {
   box-shadow: 0 2px 6px rgba(0,0,0,0.4);
 }
 
+section img {
+  width: 100%;
+  height: auto;
+}
+
 h1, h2, h3 {
   margin-top: 0;
 }
